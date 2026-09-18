@@ -31,7 +31,7 @@ function Index() {
                 height={576}
                 className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.025] group-focus-visible:scale-[1.025]"
               />
-              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-work-caption px-4 pb-4 pt-16 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100 md:group-focus-visible:opacity-100">
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-background/85 px-4 py-3 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100 md:group-focus-visible:opacity-100">
                 <span className="text-label text-foreground">{project.title}</span>
                 <span className="text-meta text-foreground/70">{project.category}</span>
               </div>
