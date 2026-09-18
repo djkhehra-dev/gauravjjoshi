@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Instagram, Linkedin, Play } from "lucide-react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -77,11 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "GAURAV J JOSHI — FILMMAKER" },
+      { name: "description", content: "Gaurav J Joshi is a filmmaker and commercial director." },
+      { name: "author", content: "Gaurav J Joshi" },
+      { property: "og:title", content: "GAURAV J JOSHI — FILMMAKER" },
+      { property: "og:description", content: "Films rooted in people, craft and culture." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -119,8 +120,21 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="min-h-screen bg-background text-foreground">
+        <header className="fixed inset-x-0 top-0 z-50 flex h-24 items-center justify-between bg-background px-4 md:h-28 md:px-8">
+          <Link to="/" className="block leading-none" aria-label="Gaurav J Joshi, home">
+            <span className="block text-brand">Gaurav J Joshi</span>
+            <span className="mt-1 block text-role text-muted-foreground">Filmmaker</span>
+          </Link>
+          <span className="text-meta text-muted-foreground">India / Worldwide</span>
+        </header>
+        <Outlet />
+        <footer className="flex items-center justify-center gap-7 px-4 py-14 md:py-20" aria-label="Social links">
+          <a href="https://www.instagram.com/gauravjjoshi" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-muted-foreground transition-colors hover:text-foreground"><Instagram size={16} strokeWidth={1.5} /></a>
+          <a href="https://www.linkedin.com/in/gaurav-j-joshi" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-muted-foreground transition-colors hover:text-foreground"><Linkedin size={16} strokeWidth={1.5} /></a>
+          <a href="https://vimeo.com/gauravjjoshi" target="_blank" rel="noreferrer" aria-label="Vimeo" className="text-muted-foreground transition-colors hover:text-foreground"><Play size={16} strokeWidth={1.5} /></a>
+        </footer>
+      </div>
     </QueryClientProvider>
   );
 }
