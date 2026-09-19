@@ -1,3 +1,3 @@
-- [ ] Rebuild homepage to match the selected white, centered two-column reference
-- [ ] Replace placeholder project names and Vimeo IDs with Gaurav's actual films
-- [ ] Simplify project pages and verify desktop/mobile presentation
+- [x] Rebuild homepage to match the selected white, centered two-column reference
+- [x] Replace placeholder project names and Vimeo IDs with Gaurav's actual films
+- [x] Simplify project pages and verify desktop/mobile presentation
