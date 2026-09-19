@@ -120,7 +120,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-background text-foreground">
-        <header className="relative flex h-24 items-start justify-center bg-background pt-7 md:h-28 md:pt-8">
+        <header className="fixed inset-x-0 top-0 z-50 flex h-24 items-start justify-center bg-background pt-7 md:h-28 md:pt-8">
           <Link to="/" className="block text-center leading-none" aria-label="Gaurav J Joshi, home">
             <span className="block text-brand">Gaurav J Joshi</span>
             <span className="mt-1 block text-role text-foreground">Filmmaker + Director</span>
