@@ -1,15 +1,14 @@
-import project01 from "@/assets/project-01.jpg";
-import project02 from "@/assets/project-02.jpg";
-import project03 from "@/assets/project-03.jpg";
-import project04 from "@/assets/project-04.jpg";
-import project05 from "@/assets/project-05.jpg";
-import project06 from "@/assets/project-06.jpg";
-import project07 from "@/assets/project-07.jpg";
-import project08 from "@/assets/project-08.jpg";
-import project09 from "@/assets/project-09.jpg";
-import project10 from "@/assets/project-10.jpg";
-import project11 from "@/assets/project-11.jpg";
-import project12 from "@/assets/project-12.jpg";
+import cover01 from "@/assets/vimeo-01.jpg.asset.json";
+import cover02 from "@/assets/vimeo-02.jpg.asset.json";
+import cover03 from "@/assets/vimeo-03.jpg.asset.json";
+import cover04 from "@/assets/vimeo-04.jpg.asset.json";
+import cover05 from "@/assets/vimeo-05.jpg.asset.json";
+import cover06 from "@/assets/vimeo-06.jpg.asset.json";
+import cover07 from "@/assets/vimeo-07.jpg.asset.json";
+import cover08 from "@/assets/vimeo-08.jpg.asset.json";
+import cover09 from "@/assets/vimeo-09.jpg.asset.json";
+import cover10 from "@/assets/vimeo-10.jpg.asset.json";
+import cover11 from "@/assets/vimeo-11.jpg.asset.json";
 
 export type Project = {
   title: string;
@@ -17,28 +16,22 @@ export type Project = {
   year: string;
   category: string;
   thumbnail: string;
-  previewVideo?: string;
   vimeoId: string;
-  description: string;
-  credits?: string[];
+  description?: string;
 };
 
-// Replace any field below with the details for your finished films.
-// `thumbnail` is the grid image, `previewVideo` can be an MP4 URL, and
-// `vimeoId` is the number at the end of a Vimeo link.
 export const projects: Project[] = [
-  { title: "Project One", slug: "project-one", year: "2026", category: "Documentary", thumbnail: project01, vimeoId: "76979871", description: "A quiet portrait of devotion, skill and the patient work behind a sacred form.", credits: ["Direction — Gaurav J Joshi", "Cinematography — To be announced"] },
-  { title: "Project Two", slug: "project-two", year: "2026", category: "Branded Film", thumbnail: project02, vimeoId: "76979871", description: "An elemental journey across an ancient landscape, held between distance and belonging.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Three", slug: "project-three", year: "2025", category: "Craft", thumbnail: project03, vimeoId: "76979871", description: "Hands, memory and material come together in a study of a living textile tradition.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Four", slug: "project-four", year: "2025", category: "Architecture", thumbnail: project04, vimeoId: "76979871", description: "Concrete, rain and landscape meet in a film about a home shaped by its climate.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Five", slug: "project-five", year: "2025", category: "Portrait", thumbnail: project05, vimeoId: "76979871", description: "The private moments before performance reveal ritual, focus and transformation.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Six", slug: "project-six", year: "2025", category: "Documentary", thumbnail: project06, vimeoId: "76979871", description: "Before daylight, a crew moves out onto still water and an uncertain horizon.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Seven", slug: "project-seven", year: "2024", category: "Branded Film", thumbnail: project07, vimeoId: "76979871", description: "A measured portrait of land, labor and the rhythms that carry through generations.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Eight", slug: "project-eight", year: "2024", category: "Craft", thumbnail: project08, vimeoId: "76979871", description: "Earth takes shape through touch in this tactile study of a practiced pair of hands.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Nine", slug: "project-nine", year: "2024", category: "Short Film", thumbnail: project09, vimeoId: "76979871", description: "A city seen between destinations, where monsoon light turns the familiar cinematic.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Ten", slug: "project-ten", year: "2023", category: "Documentary", thumbnail: project10, vimeoId: "76979871", description: "A vast mountain passage told through the small, enduring rituals of movement.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Eleven", slug: "project-eleven", year: "2023", category: "Dance Film", thumbnail: project11, vimeoId: "76979871", description: "Body, light and architecture form a spare meditation on space and release.", credits: ["Direction — Gaurav J Joshi"] },
-  { title: "Project Twelve", slug: "project-twelve", year: "2023", category: "Branded Film", thumbnail: project12, vimeoId: "76979871", description: "A warm observation of the gestures and silences that make a family table feel like home.", credits: ["Direction — Gaurav J Joshi"] },
+  { title: "Amruta: The First Mashroo Weaver", slug: "amruta-mashroo-weaver", year: "2026", category: "Good Earth", thumbnail: cover04.url, vimeoId: "1193526384" },
+  { title: "Good Earth Heritage Foundation", slug: "good-earth-heritage-foundation", year: "2026", category: "Teaser", thumbnail: cover09.url, vimeoId: "1165587330" },
+  { title: "The Last Printer of Bela", slug: "the-last-printer-of-bela", year: "2025", category: "Good Earth", thumbnail: cover03.url, vimeoId: "1103740734" },
+  { title: "Talisman Awards", slug: "talisman-awards", year: "2025", category: "Commercial", thumbnail: cover02.url, vimeoId: "1095198576" },
+  { title: "The Quilting Project", slug: "the-quilting-project", year: "2025", category: "Good Earth", thumbnail: cover06.url, vimeoId: "1044260385" },
+  { title: "Hola Prime", slug: "hola-prime", year: "2025", category: "Commercial", thumbnail: cover08.url, vimeoId: "1064323156" },
+  { title: "AAAFx", slug: "aaafx", year: "2024", category: "Director’s Cut", thumbnail: cover10.url, vimeoId: "920151752" },
+  { title: "Zero Man of India", slug: "zero-man-of-india", year: "2023", category: "Director’s Cut", thumbnail: cover01.url, vimeoId: "862934611" },
+  { title: "The Art of Origami", slug: "the-art-of-origami", year: "2023", category: "Film", thumbnail: cover05.url, vimeoId: "850808174" },
+  { title: "World Environment Day", slug: "world-environment-day", year: "2023", category: "Film", thumbnail: cover07.url, vimeoId: "845965341" },
+  { title: "Kapiva Shilajit", slug: "kapiva-shilajit", year: "2023", category: "Commercial", thumbnail: cover11.url, vimeoId: "803497266" },
 ];
 
 export function getProject(slug: string) {
