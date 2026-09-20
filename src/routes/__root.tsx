@@ -8,10 +8,10 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
-import { Grid3X3, Instagram, Linkedin, Play } from "lucide-react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { SiteChrome } from "../components/site-chrome";
 
 function NotFoundComponent() {
   return (
@@ -87,6 +87,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Montserrat:wght@700&display=swap" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -120,21 +123,8 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-background text-foreground">
-        <header className="fixed inset-x-0 top-0 z-50 flex h-24 items-start justify-center bg-background pt-7 md:h-28 md:pt-8">
-          <Link to="/" className="block text-center leading-none" aria-label="Gaurav J Joshi, home">
-            <span className="block text-brand">Gaurav J Joshi</span>
-            <span className="mt-1 block text-role text-foreground">Filmmaker + Director</span>
-          </Link>
-          <Link to="/" aria-label="View all work" className="absolute right-5 top-7 text-foreground transition-opacity hover:opacity-60 sm:right-8 md:right-10 md:top-8">
-            <Grid3X3 size={23} strokeWidth={2.5} />
-          </Link>
-        </header>
+        <SiteChrome />
         <Outlet />
-        <footer className="flex items-center justify-center gap-7 px-4 py-12 md:py-16" aria-label="Social links">
-          <a href="https://www.instagram.com/gauravjjoshi" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-muted-foreground transition-colors hover:text-foreground"><Instagram size={16} strokeWidth={1.5} /></a>
-          <a href="https://www.linkedin.com/in/gaurav-j-joshi" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-muted-foreground transition-colors hover:text-foreground"><Linkedin size={16} strokeWidth={1.5} /></a>
-          <a href="https://vimeo.com/gauravjjoshi" target="_blank" rel="noreferrer" aria-label="Vimeo" className="text-muted-foreground transition-colors hover:text-foreground"><Play size={16} strokeWidth={1.5} /></a>
-        </footer>
       </div>
     </QueryClientProvider>
   );

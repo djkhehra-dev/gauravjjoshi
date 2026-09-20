@@ -1,3 +1,5 @@
-- [x] Rebuild homepage to match the selected white, centered two-column reference
-- [x] Replace placeholder project names and Vimeo IDs with Gaurav's actual films
-- [x] Simplify project pages and verify desktop/mobile presentation
+- [ ] Preserve the existing Gaurav home grid while applying the unified navy identity styling
+- [ ] Add the animated fixed menu and full-screen navigation overlay
+- [ ] Add a contact page with Gaurav's social links
+- [ ] Expand each film page with the Vimeo player, stills, credits, and robust route states
+- [ ] Verify desktop and mobile behavior
