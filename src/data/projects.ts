@@ -17,22 +17,36 @@ export type Project = {
   category: string;
   thumbnail: string;
   vimeoId: string;
-  description?: string;
+  heading: string;
+  description: string;
+  credits: string[];
+  stills: string[];
 };
 
 export const projects: Project[] = [
-  { title: "Amruta: The First Mashroo Weaver", slug: "amruta-mashroo-weaver", year: "2026", category: "Good Earth", thumbnail: cover04.url, vimeoId: "1193526384" },
-  { title: "Good Earth Heritage Foundation", slug: "good-earth-heritage-foundation", year: "2026", category: "Teaser", thumbnail: cover09.url, vimeoId: "1165587330" },
-  { title: "The Last Printer of Bela", slug: "the-last-printer-of-bela", year: "2025", category: "Good Earth", thumbnail: cover03.url, vimeoId: "1103740734" },
-  { title: "Talisman Awards", slug: "talisman-awards", year: "2025", category: "Commercial", thumbnail: cover02.url, vimeoId: "1095198576" },
-  { title: "The Quilting Project", slug: "the-quilting-project", year: "2025", category: "Good Earth", thumbnail: cover06.url, vimeoId: "1044260385" },
-  { title: "Hola Prime", slug: "hola-prime", year: "2025", category: "Commercial", thumbnail: cover08.url, vimeoId: "1064323156" },
-  { title: "AAAFx", slug: "aaafx", year: "2024", category: "Director’s Cut", thumbnail: cover10.url, vimeoId: "920151752" },
-  { title: "Zero Man of India", slug: "zero-man-of-india", year: "2023", category: "Director’s Cut", thumbnail: cover01.url, vimeoId: "862934611" },
-  { title: "The Art of Origami", slug: "the-art-of-origami", year: "2023", category: "Film", thumbnail: cover05.url, vimeoId: "850808174" },
-  { title: "World Environment Day", slug: "world-environment-day", year: "2023", category: "Film", thumbnail: cover07.url, vimeoId: "845965341" },
-  { title: "Kapiva Shilajit", slug: "kapiva-shilajit", year: "2023", category: "Commercial", thumbnail: cover11.url, vimeoId: "803497266" },
-];
+  ["Amruta: The First Mashroo Weaver", "amruta-mashroo-weaver", "2026", "Good Earth", cover04.url, "1193526384"],
+  ["Good Earth Heritage Foundation", "good-earth-heritage-foundation", "2026", "Teaser", cover09.url, "1165587330"],
+  ["The Last Printer of Bela", "the-last-printer-of-bela", "2025", "Good Earth", cover03.url, "1103740734"],
+  ["Talisman Awards", "talisman-awards", "2025", "Commercial", cover02.url, "1095198576"],
+  ["The Quilting Project", "the-quilting-project", "2025", "Good Earth", cover06.url, "1044260385"],
+  ["Hola Prime", "hola-prime", "2025", "Commercial", cover08.url, "1064323156"],
+  ["AAAFx", "aaafx", "2024", "Director’s Cut", cover10.url, "920151752"],
+  ["Zero Man of India", "zero-man-of-india", "2023", "Director’s Cut", cover01.url, "862934611"],
+  ["The Art of Origami", "the-art-of-origami", "2023", "Film", cover05.url, "850808174"],
+  ["World Environment Day", "world-environment-day", "2023", "Film", cover07.url, "845965341"],
+  ["Kapiva Shilajit", "kapiva-shilajit", "2023", "Commercial", cover11.url, "803497266"],
+].map(([title, slug, year, category, thumbnail, vimeoId]) => ({
+  title,
+  slug,
+  year,
+  category,
+  thumbnail,
+  vimeoId,
+  heading: title,
+  description: `${category} film, ${year}.`,
+  credits: ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
+  stills: [thumbnail, thumbnail, thumbnail, thumbnail],
+})) as Project[];
 
 export function getProject(slug: string) {
   return projects.find((project) => project.slug === slug);
