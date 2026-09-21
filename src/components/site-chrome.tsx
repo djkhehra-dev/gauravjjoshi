@@ -1,4 +1,4 @@
-import { Link, useRouterState } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { Instagram, Linkedin, MapPin, Phone, Play } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -10,9 +10,6 @@ const socials = [
 
 export function SiteChrome() {
   const [open, setOpen] = useState(false);
-  const pathname = useRouterState({ select: (state) => state.location.pathname });
-
-  useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
     const close = (event: KeyboardEvent) => event.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", close);
