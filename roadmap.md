@@ -1,5 +1,5 @@
-- [ ] Preserve the existing Gaurav home grid while applying the unified navy identity styling
-- [ ] Add the animated fixed menu and full-screen navigation overlay
-- [ ] Add a contact page with Gaurav's social links
-- [ ] Expand each film page with the Vimeo player, stills, credits, and robust route states
-- [ ] Verify desktop and mobile behavior
+- [x] Preserve the existing Gaurav home grid while applying the unified navy identity styling
+- [x] Add the animated fixed menu and full-screen navigation overlay
+- [x] Add a contact page with Gaurav's social links
+- [x] Expand each film page with the Vimeo player, stills, credits, and robust route states
+- [x] Verify desktop and mobile behavior
