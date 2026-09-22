@@ -230,7 +230,7 @@
   display: grid;
   grid-template-columns: repeat(2, 398px);
   column-gap: 30px;
-  row-gap: 50px;
+  row-gap: 48px;
 }
 
 .work-item { width: 398px; }
@@ -379,7 +379,7 @@
   .project-article,
   .project-player,
   .project-details { width: 92vw; }
-  .work-grid { grid-template-columns: 92vw; row-gap: 50px; }
+  .work-grid { grid-template-columns: 92vw; row-gap: 48px; }
   .work-item,
   .work-thumb { width: 92vw; }
   .work-thumb { height: auto; aspect-ratio: 398 / 165; }
