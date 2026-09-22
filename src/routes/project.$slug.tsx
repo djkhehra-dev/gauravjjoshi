@@ -34,9 +34,9 @@ function ProjectPage() {
   const project = Route.useLoaderData();
 
   return (
-    <main className="px-5 pb-20 pt-36 sm:px-8 md:pt-44">
-      <article className="mx-auto max-w-[1250px]">
-        <div className="aspect-video w-full bg-muted">
+    <main className="project-main">
+      <article className="project-article">
+        <div className="project-player bg-muted">
           <iframe
             src={`https://player.vimeo.com/video/${project.vimeoId}?title=0&byline=0&portrait=0&color=000000`}
             title={`${project.title} film`}
@@ -47,24 +47,19 @@ function ProjectPage() {
           />
         </div>
 
-        <div className="mt-16 grid gap-12 md:grid-cols-[1.4fr_1fr] md:gap-16">
-          <div className="grid grid-cols-2 gap-2">
+        <div className="project-details">
+          <div className="stills-grid">
             {project.stills.map((still, index) => (
-              <img key={`${project.slug}-${index}`} src={still} alt={`${project.title} still ${index + 1}`} loading="lazy" className="aspect-[4/3] w-full border border-foreground object-cover" />
+              <img key={`${project.slug}-${index}`} src={still} alt={`${project.title} still ${index + 1}`} loading="lazy" />
             ))}
           </div>
           <div className="text-center text-credit">
             <h1 className="text-project-heading">{project.heading}</h1>
-            <p className="mt-4 text-sm text-muted-foreground">{project.description}</p>
-            <div className="mt-7">
+            <div className="project-credits">
               {project.credits.map((credit) => <p key={credit}>{credit}</p>)}
             </div>
           </div>
         </div>
-
-        <Link to="/" className="mt-16 inline-flex border-b border-brand-blue pb-1 text-label text-brand-blue">
-          Back to work
-        </Link>
       </article>
     </main>
   );
