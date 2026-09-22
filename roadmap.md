@@ -3,6 +3,6 @@
 - [x] Add a contact page with Gaurav's social links
 - [x] Expand each film page with the Vimeo player, stills, credits, and robust route states
 - [x] Verify desktop and mobile behavior
-- [ ] Apply the supplied fixed desktop measurements and responsive single-column layout
-- [ ] Rebuild and verify the menu overlay, icon animation, and scroll locking
-- [ ] Cross-check home and project pages at desktop and mobile widths
+- [x] Apply the supplied fixed desktop measurements and responsive single-column layout
+- [x] Rebuild and verify the menu overlay, icon animation, and scroll locking
+- [x] Cross-check home and project pages at desktop and mobile widths
