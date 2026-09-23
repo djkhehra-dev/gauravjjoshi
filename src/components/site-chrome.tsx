@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Linkedin, MapPin, Phone, Play } from "lucide-react";
+import { Instagram, Linkedin, Play } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const socials = [
   { label: "Instagram", href: "https://www.instagram.com/gauravjjoshi", Icon: Instagram },
@@ -29,9 +30,10 @@ export function SiteChrome() {
         </Link>
       </header>
 
-      <button type="button" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((value) => !value)} className={`menu-dots ${open ? "is-open" : ""}`}>
-        {Array.from({ length: 9 }, (_, index) => <span key={index} />)}
-      </button>
+      <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((value) => !value)} className={`menu-toggle ${open ? "is-open" : ""}`}>
+        <span className="menu-dot-grid" aria-hidden="true">{Array.from({ length: 9 }, (_, index) => <i key={index} />)}</span>
+        <span className="menu-close" aria-hidden="true"><i /><i /></span>
+      </Button>
 
       <div className={`menu-overlay ${open ? "is-open" : ""}`} aria-hidden={!open} onClick={() => setOpen(false)}>
         <div className="menu-socials" onClick={(event) => event.stopPropagation()}>
@@ -41,10 +43,9 @@ export function SiteChrome() {
         </div>
         <nav className="menu-nav" aria-label="Main navigation" onClick={(event) => event.stopPropagation()}>
           <div className="menu-nav-links">
-            <Link to="/" onClick={() => setOpen(false)}><MapPin size={14} fill="currentColor" /> Home</Link>
-            <Link to="/contact" onClick={() => setOpen(false)}><Phone size={14} fill="currentColor" /> Contact</Link>
+            <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+            <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
           </div>
-          <div className="menu-rule" />
         </nav>
       </div>
     </>
