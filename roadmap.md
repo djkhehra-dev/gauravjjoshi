@@ -7,7 +7,7 @@
 - [x] Rebuild and verify the menu overlay, icon animation, and scroll locking
 - [x] Cross-check home and project pages at desktop and mobile widths
 
-- [ ] Replace home work grid with the 11 requested Vimeo embeds in exact order
-- [ ] Rebuild the fixed full-screen animated menu
-- [ ] Rebuild contact page with portrait and reference-led form
+- [x] Replace home work grid with the 11 requested Vimeo embeds in exact order
+- [x] Rebuild the fixed full-screen animated menu
+- [x] Rebuild contact page with portrait and reference-led form
 - [ ] Verify gallery, menu, contact, and mobile layouts
