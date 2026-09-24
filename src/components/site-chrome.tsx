@@ -30,7 +30,7 @@ export function SiteChrome() {
         </Link>
       </header>
 
-      <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((value) => !value)} className={`menu-toggle ${open ? "is-open" : ""}`}>
+      <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={(event) => { event.stopPropagation(); setOpen((value) => !value); }} className={`menu-toggle ${open ? "is-open" : ""}`}>
         <span className="menu-dot-grid" aria-hidden="true">{Array.from({ length: 9 }, (_, index) => <i key={index} />)}</span>
         <span className="menu-close" aria-hidden="true"><i /><i /></span>
       </Button>
