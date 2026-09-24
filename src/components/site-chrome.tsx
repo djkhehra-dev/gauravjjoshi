@@ -35,7 +35,7 @@ export function SiteChrome() {
         <span className="menu-close" aria-hidden="true"><i /><i /></span>
       </Button>
 
-      <div className={`menu-overlay ${open ? "is-open" : ""}`} aria-hidden={!open} onClick={() => setOpen(false)}>
+      <div className={`menu-overlay ${open ? "is-open" : ""}`} aria-hidden={!open} onPointerDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
         <div className="menu-socials" onClick={(event) => event.stopPropagation()}>
           {socials.map(({ label, href, Icon }) => (
             <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} onClick={() => setOpen(false)}><Icon size={17} strokeWidth={1.8} /></a>
