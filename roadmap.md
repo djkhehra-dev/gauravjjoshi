@@ -10,4 +10,4 @@
 - [x] Replace home work grid with the 11 requested Vimeo embeds in exact order
 - [x] Rebuild the fixed full-screen animated menu
 - [x] Rebuild contact page with portrait and reference-led form
-- [ ] Verify gallery, menu, contact, and mobile layouts
+- [x] Verify gallery, menu, contact, and mobile layouts
