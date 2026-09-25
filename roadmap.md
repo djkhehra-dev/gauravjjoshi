@@ -2,3 +2,4 @@
 - [x] Match the supplied two-column homepage spacing and title treatment
 - [x] Refine film detail pages to the supplied player-and-credits composition
 - [x] Verify homepage clicks and desktop/mobile layouts
+- [x] Add ISS World as project twelve with its Vimeo thumbnail and detail page
