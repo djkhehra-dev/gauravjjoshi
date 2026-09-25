@@ -1,13 +1,4 @@
-- [x] Preserve the existing Gaurav home grid while applying the unified navy identity styling
-- [x] Add the animated fixed menu and full-screen navigation overlay
-- [x] Add a contact page with Gaurav's social links
-- [x] Expand each film page with the Vimeo player, stills, credits, and robust route states
-- [x] Verify desktop and mobile behavior
-- [x] Apply the supplied fixed desktop measurements and responsive single-column layout
-- [x] Rebuild and verify the menu overlay, icon animation, and scroll locking
-- [x] Cross-check home and project pages at desktop and mobile widths
-
-- [x] Replace home work grid with the 11 requested Vimeo embeds in exact order
-- [x] Rebuild the fixed full-screen animated menu
-- [x] Rebuild contact page with portrait and reference-led form
-- [x] Verify gallery, menu, contact, and mobile layouts
+- [ ] Replace homepage players with linked film thumbnails in the current order
+- [ ] Match the supplied two-column homepage spacing and title treatment
+- [ ] Refine film detail pages to the supplied player-and-credits composition
+- [ ] Verify homepage clicks and desktop/mobile layouts
