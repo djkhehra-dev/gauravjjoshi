@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { projects } from "@/data/projects";
 
 export const Route = createFileRoute("/")({
@@ -22,16 +22,22 @@ function Index() {
       <section aria-label="Selected films" className="video-gallery">
         {projects.map((project) => (
           <article key={project.slug} className="video-entry">
-            <div className="video-frame bg-muted">
-              <iframe
-                src={`https://player.vimeo.com/video/${project.vimeoId}?title=0&byline=0&portrait=0&color=1e4487`}
-                title={`${project.title} film`}
-                loading="lazy"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            <h2 className="text-label text-foreground">{project.title}</h2>
+            <Link
+              to="/project/$slug"
+              params={{ slug: project.slug }}
+              className="video-link"
+              aria-label={`View ${project.title}`}
+            >
+              <div className="video-frame bg-muted">
+                <img
+                  src={project.thumbnail}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 className="text-label text-foreground">{project.title}</h2>
+            </Link>
           </article>
         ))}
       </section>

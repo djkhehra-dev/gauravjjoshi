@@ -228,6 +228,7 @@
   row-gap: clamp(72px, 9vw, 140px);
 }
 .video-entry { width: 100%; }
+.video-link { display: block; color: inherit; text-decoration: none; }
 .video-entry:last-child:nth-child(odd) {
   width: calc((100% - clamp(24px, 2.5vw, 40px)) / 2);
   grid-column: 1 / -1;
@@ -240,7 +241,7 @@
   cursor: pointer;
   transition: transform 300ms ease;
 }
-.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.video-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .video-entry .text-label { margin-top: 13px; }
 
 @media (hover: hover) and (pointer: fine) {
