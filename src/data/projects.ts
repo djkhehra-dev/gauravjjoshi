@@ -9,6 +9,7 @@ import cover08 from "@/assets/vimeo-08.jpg.asset.json";
 import cover09 from "@/assets/vimeo-09.jpg.asset.json";
 import cover10 from "@/assets/vimeo-10.jpg.asset.json";
 import cover11 from "@/assets/vimeo-11.jpg.asset.json";
+import cover12 from "@/assets/vimeo-12.jpg.asset.json";
 
 export type Project = {
   title: string;
@@ -35,6 +36,7 @@ export const projects: Project[] = [
   ["Good Earth Heritage Foundation", "good-earth-heritage-foundation", "2026", "Teaser", cover09.url, "1165587330"],
   ["#World Environment Day", "world-environment-day", "2023", "Film", cover07.url, "845965341"],
   ["AAAFx", "aaafx", "2024", "Director’s Cut", cover10.url, "920151752"],
+  ["ISS World - People Make Places | EP 02", "iss-world-people-make-places", "2025", "Film", cover12.url, "1050458130"],
 ].map(([title, slug, year, category, thumbnail, vimeoId]) => ({
   title,
   slug,
