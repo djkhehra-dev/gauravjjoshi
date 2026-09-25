@@ -1,4 +1,4 @@
-- [ ] Replace homepage players with linked film thumbnails in the current order
-- [ ] Match the supplied two-column homepage spacing and title treatment
-- [ ] Refine film detail pages to the supplied player-and-credits composition
-- [ ] Verify homepage clicks and desktop/mobile layouts
+- [x] Replace homepage players with linked film thumbnails in the current order
+- [x] Match the supplied two-column homepage spacing and title treatment
+- [x] Refine film detail pages to the supplied player-and-credits composition
+- [x] Verify homepage clicks and desktop/mobile layouts
