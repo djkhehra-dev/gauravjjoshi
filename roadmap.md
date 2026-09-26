@@ -3,3 +3,4 @@
 - [x] Refine film detail pages to the supplied player-and-credits composition
 - [x] Verify homepage clicks and desktop/mobile layouts
 - [x] Add ISS World as project twelve with its Vimeo thumbnail and detail page
+- [x] Refine menu opening and reverse closing motion against the live reference

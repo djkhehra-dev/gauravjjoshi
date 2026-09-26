@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Linkedin, Play } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const socials = [
@@ -10,16 +10,42 @@ const socials = [
 ];
 
 export function SiteChrome() {
-  const [open, setOpen] = useState(false);
+  const [phase, setPhase] = useState<"closed" | "open" | "closing">("closed");
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const open = phase === "open";
+
+  const closeMenu = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setPhase("closing");
+    closeTimer.current = setTimeout(() => {
+      setPhase("closed");
+      closeTimer.current = null;
+    }, 510);
+  };
+
+  const toggleMenu = () => {
+    if (open) closeMenu();
+    else {
+      if (closeTimer.current) clearTimeout(closeTimer.current);
+      setPhase("open");
+    }
+  };
+
   useEffect(() => {
-    const close = (event: KeyboardEvent) => event.key === "Escape" && setOpen(false);
+    const close = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && phase === "open") closeMenu();
+    };
     window.addEventListener("keydown", close);
-    document.body.style.overflow = open ? "hidden" : "";
+    document.body.style.overflow = phase !== "closed" ? "hidden" : "";
     return () => {
       window.removeEventListener("keydown", close);
       document.body.style.overflow = "";
     };
-  }, [open]);
+  }, [phase]);
+
+  useEffect(() => () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+  }, []);
 
   return (
     <>
@@ -30,21 +56,21 @@ export function SiteChrome() {
         </Link>
       </header>
 
-      <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((value) => !value)} className={`menu-toggle ${open ? "is-open" : ""}`}>
+      <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={toggleMenu} className={`menu-toggle ${open ? "is-open" : ""}`}>
         <span className="menu-dot-grid" aria-hidden="true">{Array.from({ length: 9 }, (_, index) => <i key={index} />)}</span>
         <span className="menu-close" aria-hidden="true"><i /><i /></span>
       </Button>
 
-      <div className={`menu-overlay ${open ? "is-open" : ""}`} aria-hidden={!open} onPointerDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
+      <div className={`menu-overlay ${phase === "open" ? "is-open" : phase === "closing" ? "is-closing" : ""}`} aria-hidden={phase === "closed"} inert={phase === "closed"} onPointerDown={(event) => { if (event.target === event.currentTarget && open) closeMenu(); }}>
         <div className="menu-socials" onClick={(event) => event.stopPropagation()}>
           {socials.map(({ label, href, Icon }) => (
-            <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} onClick={() => setOpen(false)}><Icon size={17} strokeWidth={1.8} /></a>
+            <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} onClick={closeMenu}><Icon size={17} strokeWidth={1.8} /></a>
           ))}
         </div>
         <nav className="menu-nav" aria-label="Main navigation" onClick={(event) => event.stopPropagation()}>
           <div className="menu-nav-links">
-            <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-            <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+            <Link to="/" onClick={closeMenu}>Home</Link>
+            <Link to="/contact" onClick={closeMenu}>Contact</Link>
           </div>
         </nav>
       </div>
