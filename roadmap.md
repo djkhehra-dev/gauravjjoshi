@@ -4,3 +4,4 @@
 - [x] Verify homepage clicks and desktop/mobile layouts
 - [x] Add ISS World as project twelve with its Vimeo thumbnail and detail page
 - [x] Refine menu opening and reverse closing motion against the live reference
+- [x] Standardize film thumbnail crops and tighten homepage film title labels
