@@ -65,7 +65,7 @@
 
 :root {
   --brand-blue: #1e4487;
-  --overlay: rgba(246, 249, 253, 0.72);
+  --overlay: oklch(0.95 0.025 240 / 76%);
   --radius: 0;
   --background: oklch(1 0 0);
   --foreground: oklch(0.238 0 0);
@@ -331,7 +331,6 @@
   inset: 0;
   z-index: 50;
   background: var(--overlay);
-  backdrop-filter: blur(3px);
   opacity: 0;
   transform: scale(0.94);
   visibility: hidden;
