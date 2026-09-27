@@ -65,7 +65,7 @@
 
 :root {
   --brand-blue: #1e4487;
-  --overlay: oklch(0.95 0.025 240 / 76%);
+  --overlay: oklch(0.98 0.008 240 / 90%);
   --radius: 0;
   --background: oklch(1 0 0);
   --foreground: oklch(0.238 0 0);
@@ -340,26 +340,22 @@
   z-index: 50;
   background: var(--overlay);
   opacity: 0;
-  transform: scale(0.94);
   visibility: hidden;
   pointer-events: none;
-  transform-origin: center center;
-  transition: opacity 310ms ease-in-out, transform 310ms ease-in-out, visibility 0s linear 310ms;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 500ms;
 }
 
 .menu-overlay.is-open {
   opacity: 1;
-  transform: scale(1);
   visibility: visible;
   pointer-events: auto;
-  transition: opacity 520ms cubic-bezier(0.16, 1, 0.3, 1), transform 520ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s;
+  transition: opacity 650ms cubic-bezier(0.4, 0, 0.2, 1), visibility 0s;
 }
 .menu-overlay.is-closing {
   opacity: 0;
-  transform: scale(0.97);
   visibility: visible;
   pointer-events: auto;
-  transition: opacity 310ms ease-in-out 180ms, transform 310ms ease-in-out 180ms, visibility 0s linear 510ms;
+  transition: opacity 470ms cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 510ms;
 }
 
 .menu-socials {
@@ -373,19 +369,12 @@
 }
 .menu-socials a {
   opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 170ms ease-in-out, transform 170ms ease-in-out;
+  transition: opacity 390ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-overlay.is-open .menu-socials a {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 400ms cubic-bezier(0.22, 1, 0.36, 1), transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 720ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-overlay.is-open .menu-socials a:nth-child(1) { transition-delay: 350ms; }
-.menu-overlay.is-open .menu-socials a:nth-child(2) { transition-delay: 430ms; }
-.menu-overlay.is-open .menu-socials a:nth-child(3) { transition-delay: 510ms; }
-.menu-overlay.is-closing .menu-socials a:nth-child(1) { transition-delay: 120ms; }
-.menu-overlay.is-closing .menu-socials a:nth-child(2) { transition-delay: 60ms; }
 
 .menu-nav {
   position: absolute;
@@ -407,18 +396,13 @@
   letter-spacing: 0.08em;
   line-height: 1.05;
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 160ms ease-in-out, transform 180ms ease-in-out;
+  transition: opacity 390ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
 }
 .menu-overlay.is-open .menu-nav a {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1), transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 740ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-overlay.is-open .menu-nav a:nth-child(1) { transition-delay: 300ms; }
-.menu-overlay.is-open .menu-nav a:nth-child(2) { transition-delay: 385ms; }
-.menu-overlay.is-closing .menu-nav a:nth-child(1) { transition-delay: 80ms; }
 
 .contact-main { width: min(826px, 92vw); margin: 0 auto; padding: 0 0 90px; }
 .contact-intro { display: grid; grid-template-columns: 330px 1fr; gap: 34px; align-items: center; margin-bottom: 30px; }
