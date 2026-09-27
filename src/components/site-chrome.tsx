@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Linkedin, Play } from "lucide-react";
+import { Instagram, Linkedin, Phone, Pin, Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -58,7 +58,7 @@ export function SiteChrome() {
 
       <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={toggleMenu} className={`menu-toggle ${open ? "is-open" : ""}`}>
         <span className="menu-dot-grid" aria-hidden="true">{Array.from({ length: 9 }, (_, index) => <i key={index} />)}</span>
-        <span className="menu-close" aria-hidden="true"><i /><i /></span>
+        <span className="menu-close" aria-hidden="true">{Array.from({ length: 9 }, (_, index) => <i key={index} />)}</span>
       </Button>
 
       <div className={`menu-overlay ${phase === "open" ? "is-open" : phase === "closing" ? "is-closing" : ""}`} aria-hidden={phase === "closed"} inert={phase === "closed"} onPointerDown={(event) => { if (event.target === event.currentTarget && open) closeMenu(); }}>
@@ -69,8 +69,8 @@ export function SiteChrome() {
         </div>
         <nav className="menu-nav" aria-label="Main navigation" onClick={(event) => event.stopPropagation()}>
           <div className="menu-nav-links">
-            <Link to="/" onClick={closeMenu}>Home</Link>
-            <Link to="/contact" onClick={closeMenu}>Contact</Link>
+            <Link to="/" onClick={closeMenu}><Pin size={13} strokeWidth={2.6} aria-hidden="true" />Home</Link>
+            <Link to="/contact" onClick={closeMenu}><Phone size={13} strokeWidth={2.6} aria-hidden="true" />Contact</Link>
           </div>
         </nav>
       </div>

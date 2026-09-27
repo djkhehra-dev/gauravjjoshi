@@ -7,3 +7,4 @@
 - [x] Standardize film thumbnail crops and tighten homepage film title labels
 - [x] Resize homepage gallery to a narrow editorial grid with uniform wide crops
 - [x] Match the recorded menu's translucent wash and synchronized text fade on open and close
+- [x] Match the supplied open-menu screenshot with compact horizontal links, divider, and dotted close icon
