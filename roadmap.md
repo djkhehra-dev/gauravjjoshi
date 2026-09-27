@@ -5,3 +5,4 @@
 - [x] Add ISS World as project twelve with its Vimeo thumbnail and detail page
 - [x] Refine menu opening and reverse closing motion against the live reference
 - [x] Standardize film thumbnail crops and tighten homepage film title labels
+- [x] Resize homepage gallery to a narrow editorial grid with uniform wide crops
