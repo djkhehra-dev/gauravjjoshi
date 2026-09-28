@@ -7,9 +7,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "CONTACT — GAURAV J JOSHI" },
-      { name: "description", content: "Contact filmmaker and commercial director Gaurav J Joshi." },
+      { name: "description", content: "Contact award-winning New Delhi filmmaker Gaurav Joshi." },
       { property: "og:title", content: "CONTACT — GAURAV J JOSHI" },
-      { property: "og:description", content: "Contact filmmaker and commercial director Gaurav J Joshi." },
+      { property: "og:description", content: "Contact award-winning New Delhi filmmaker Gaurav Joshi." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -31,9 +31,21 @@ function ContactPage() {
       <section className="contact-intro" aria-labelledby="about-title">
         <img src={portraitAsset.url} alt="Gaurav J Joshi" className="contact-portrait" />
         <div className="contact-copy">
-          <h1 id="about-title" className="text-contact-kicker">About Gaurav J Joshi</h1>
-          <p>I’m a filmmaker and commercial director drawn to people, craft, and culture. My work brings a documentary eye to honest stories and considered visual worlds.</p>
-          <p>If you have a story to tell or a project to discuss, I’d be glad to hear from you.</p>
+          <h1 id="about-title" className="text-contact-kicker">Gaurav Joshi</h1>
+          <p>Gaurav Joshi is an award-winning filmmaker based in New Delhi, working across narrative, commercial and documentary film.</p>
+          <p>He is drawn to stories about people, places, craft and culture, and is interested in finding the details that make a story feel real. His films balance a strong visual approach with honest moments, often spending time with people and their worlds before shaping the story around them.</p>
+          <p>Over the last 12 years, Gaurav has worked across advertising, branded content and film. His work has taken him across India, from working closely with craftspeople and communities to making films for brands and organisations.</p>
+          <p>He studied Journalism and currently runs Sparkk, a film production company focused on commercials, documentaries and films rooted in people, place and culture.</p>
+
+          <section className="contact-recognition" aria-labelledby="recognition-title">
+            <h2 id="recognition-title">Recognition</h2>
+            <ul>
+              <li>Silver | Abby Awards, Young Maverick 2023 | Zero Man of India</li>
+              <li>Shortlisted | Abby Awards 2024, Green Abby &amp; Red Abby | Thaaragai Aarathana</li>
+              <li>Shortlisted | Good Ads Matter, Young Director 2024 | Thaaragai Aarathana</li>
+              <li>Featured | Vimeo Staff Pick | Call of Yamuna</li>
+            </ul>
+          </section>
         </div>
       </section>
 
