@@ -31,7 +31,7 @@ function ContactPage() {
       <section className="contact-intro" aria-labelledby="about-title">
         <img src={portraitAsset.url} alt="Gaurav J Joshi" className="contact-portrait" />
         <div className="contact-copy">
-          <h1 id="about-title" className="text-contact-kicker">Gaurav Joshi</h1>
+          <h1 id="about-title" className="text-contact-kicker">About Gaurav Joshi</h1>
           <p>Gaurav Joshi is an award-winning filmmaker based in New Delhi, working across narrative, commercial and documentary film.</p>
           <p>He is drawn to stories about people, places, craft and culture, and is interested in finding the details that make a story feel real. His films balance a strong visual approach with honest moments, often spending time with people and their worlds before shaping the story around them.</p>
           <p>Over the last 12 years, Gaurav has worked across advertising, branded content and film. His work has taken him across India, from working closely with craftspeople and communities to making films for brands and organisations.</p>
