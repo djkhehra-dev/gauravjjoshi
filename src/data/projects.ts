@@ -8,8 +8,8 @@ import cover07 from "@/assets/vimeo-07.jpg.asset.json";
 import cover08 from "@/assets/vimeo-08.jpg.asset.json";
 import cover09 from "@/assets/vimeo-09.jpg.asset.json";
 import cover10 from "@/assets/vimeo-10.jpg.asset.json";
-import cover11 from "@/assets/vimeo-11.jpg.asset.json";
 import cover12 from "@/assets/vimeo-12.jpg.asset.json";
+import thaaragaiCover from "@/assets/thaaragai-aarathana.jpg.asset.json";
 
 export type Project = {
   title: string;
@@ -27,7 +27,7 @@ export type Project = {
 export const projects: Project[] = [
   ["Zero Man of India", "zero-man-of-india", "2023", "Director’s Cut", cover01.url, "862934611"],
   ["Talisman Awards", "talisman-awards", "2025", "Commercial", cover02.url, "1095198576"],
-  ["Thaaragai Aarathana", "thaaragai-aarathana", "2025", "Film", cover11.url, "1043248175"],
+  ["Thaaragai Aarathana", "thaaragai-aarathana", "2025", "Film", thaaragaiCover.url, "1043248175"],
   ["Hola Prime", "hola-prime", "2025", "Commercial", cover08.url, "1064323156"],
   ["The Last Printer of Bela", "the-last-printer-of-bela", "2025", "Good Earth", cover03.url, "1103740734"],
   ["Amruta : The First Mashroo Weaver", "amruta-mashroo-weaver", "2026", "Good Earth", cover04.url, "1193526384"],
