@@ -9,4 +9,4 @@
 - [x] Match the recorded menu's translucent wash and synchronized text fade on open and close
 - [x] Match the supplied open-menu screenshot with compact horizontal links, divider, and dotted close icon
 - [x] Add Gaurav's full biography and recognition details to the reference-matched contact page
-12. - [x] Restyle the centered identity as an editorial serif wordmark with a muted FILM DIRECTOR subtitle
+- [x] Restyle the centered identity as an editorial serif wordmark with a muted FILM DIRECTOR subtitle
