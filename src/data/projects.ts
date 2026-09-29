@@ -8,7 +8,6 @@ import cover07 from "@/assets/vimeo-07.jpg.asset.json";
 import cover08 from "@/assets/vimeo-08.jpg.asset.json";
 import cover09 from "@/assets/vimeo-09.jpg.asset.json";
 import cover10 from "@/assets/vimeo-10.jpg.asset.json";
-import cover11 from "@/assets/vimeo-11.jpg.asset.json";
 import cover12 from "@/assets/vimeo-12.jpg.asset.json";
 import thaaragaiCover from "@/assets/thaaragai-aarathana.jpg.asset.json";
 
