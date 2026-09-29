@@ -50,9 +50,9 @@ export function SiteChrome() {
   return (
     <>
       <header className="site-header">
-        <Link to="/" className="block text-center text-brand-blue" aria-label="Gaurav J Joshi, home">
+        <Link to="/" className="block text-center" aria-label="Gaurav J Joshi, home">
           <span className="block text-brand">Gaurav J Joshi</span>
-          <span className="mt-1 block text-role">Filmmaker + Director</span>
+          <span className="mt-1 block text-role">Film Director</span>
         </Link>
       </header>
 
