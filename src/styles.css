@@ -153,9 +153,9 @@
 
 @utility text-brand {
   color: var(--foreground);
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -163,7 +163,7 @@
 
 @utility text-role {
   color: var(--muted-foreground);
-  font-family: Jost, "Helvetica Neue", sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 9px;
   font-weight: 300;
   line-height: 1.1;
@@ -420,10 +420,10 @@
 .menu-nav a svg { flex: none; }
 
 .contact-main { width: min(826px, 92vw); margin: 0 auto; padding: 0 0 90px; }
-.contact-intro { display: grid; grid-template-columns: 330px 1fr; gap: 34px; align-items: start; margin-bottom: 30px; }
+.contact-intro { display: grid; grid-template-columns: 330px 1fr; gap: 34px; align-items: start; margin-bottom: 30px; margin-top: 10px }
 .contact-portrait { width: 330px; height: 368px; border: 1px solid var(--foreground); object-fit: cover; object-position: center 25%; filter: grayscale(1); }
 .contact-copy { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 300; line-height: 22.5px; }
-.contact-copy .text-contact-kicker { margin: 52px 0 22px; text-align: center; }
+.contact-copy .text-contact-kicker { margin-bottom: 20px; text-align: center; }
 .contact-copy p + p { margin-top: 18px; }
 .contact-recognition { margin-top: 26px; }
 .contact-recognition h2 { margin-bottom: 8px; font-size: 15px; font-weight: 400; line-height: 22.5px; }
