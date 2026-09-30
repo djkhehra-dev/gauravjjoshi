@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import portraitAsset from "@/assets/gaurav-contact.jpg.asset.json";
+import portraitAsset from "@/assets/gaurav-contact.jpg";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/contact")({
@@ -29,7 +29,7 @@ function ContactPage() {
   return (
     <main className="contact-main">
       <section className="contact-intro" aria-labelledby="about-title">
-        <img src={portraitAsset.url} alt="Gaurav J Joshi" className="contact-portrait" />
+        <img src={portraitAsset} alt="Gaurav J Joshi" className="contact-portrait" />
         <div className="contact-copy">
           <h1 id="about-title" className="text-contact-kicker">About Gaurav Joshi</h1>
           <p>Gaurav Joshi is an award-winning filmmaker based in New Delhi, working across narrative, commercial and documentary film.</p>
