@@ -224,6 +224,28 @@
 .site-header .text-role { margin-top: 4px; }
 
 .home-main { width: min(734px, 92vw); margin: 0 auto; padding-bottom: 100px; }
+.home-recognition {
+  overflow: hidden;
+  margin-top: -29px;
+  margin-bottom: 18px;
+  color: var(--foreground);
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 18px;
+}
+.home-recognition-track {
+  display: flex;
+  width: max-content;
+  animation: recognition-scroll 31s linear infinite;
+}
+.home-recognition:hover .home-recognition-track { animation-play-state: paused; }
+.home-recognition-list { display: flex; flex: none; margin: 0; padding: 0; list-style: none; }
+.home-recognition-list li { flex: none; white-space: nowrap; }
+.home-recognition-list strong { font-weight: 700; }
+.home-recognition-dot { display: inline-block; padding: 0 22px; }
+@keyframes recognition-scroll { to { transform: translateX(-50%); } }
 .video-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
