@@ -35,7 +35,6 @@ function ContactPage() {
           <p>Gaurav Joshi is an award-winning filmmaker based in New Delhi, working across narrative, commercial and documentary film.</p>
           <p>He is drawn to stories about people, places, craft and culture, and is interested in finding the details that make a story feel real. His films balance a strong visual approach with honest moments, often spending time with people and their worlds before shaping the story around them.</p>
           <p>Over the last 12 years, Gaurav has worked across advertising, branded content and film. His work has taken him across India, from working closely with craftspeople and communities to making films for brands and organisations.</p>
-          <p>He studied Journalism and currently runs Sparkk, a film production company focused on commercials, documentaries and films rooted in people, place and culture.</p>
 
           <section className="contact-recognition" aria-labelledby="recognition-title">
             <h2 id="recognition-title">Recognition</h2>
@@ -52,7 +51,7 @@ function ContactPage() {
       <section className="contact-panel" aria-labelledby="contact-title">
         <div className="contact-heading">
           <h2 id="contact-title" className="text-contact-kicker">Get in touch</h2>
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="mailto:gauravjoshi78@gmail.com">gauravjoshi78@gmail.com</a>
           <span aria-hidden="true">—</span>
         </div>
 

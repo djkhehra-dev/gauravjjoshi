@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const socials = [
   { label: "Instagram", href: "https://www.instagram.com/gauravjjoshi", Icon: Instagram },
   { label: "Vimeo", href: "https://vimeo.com/gauravjjoshi", Icon: Play },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/gaurav-j-joshi", Icon: Linkedin },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/gauravjjoshi/", Icon: Linkedin },
 ];
 
 export function SiteChrome() {
@@ -64,7 +64,7 @@ export function SiteChrome() {
       <div className={`menu-overlay ${phase === "open" ? "is-open" : phase === "closing" ? "is-closing" : ""}`} aria-hidden={phase === "closed"} inert={phase === "closed"} onPointerDown={(event) => { if (event.target === event.currentTarget && open) closeMenu(); }}>
         <div className="menu-socials" onClick={(event) => event.stopPropagation()}>
           {socials.map(({ label, href, Icon }) => (
-            <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} onClick={closeMenu}><Icon size={17} strokeWidth={1.8} /></a>
+            <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} onClick={closeMenu}><Icon size={17} strokeWidth={1.8} /></a>
           ))}
         </div>
         <nav className="menu-nav" aria-label="Main navigation" onClick={(event) => event.stopPropagation()}>
