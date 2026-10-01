@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { getProject } from "@/data/projects";
+import { getProject, type Project } from "@/data/projects";
 
 function ProjectNotFound() {
   return <main className="flex min-h-[70vh] items-center justify-center px-6 pt-32 text-center"><div><h1 className="text-project-title">Film not found</h1><Link to="/" className="mt-6 inline-block text-label text-brand-blue">Back to work</Link></div></main>;
@@ -15,23 +15,26 @@ export const Route = createFileRoute("/project/$slug")({
     if (!project) throw notFound();
     return project;
   },
-  head: ({ loaderData }) => ({
-    meta: loaderData ? [
-      { title: `${loaderData.title.toUpperCase()} — GAURAV J JOSHI` },
-      { name: "description", content: `${loaderData.title}, directed by Gaurav J Joshi.` },
-      { property: "og:title", content: `${loaderData.title.toUpperCase()} — GAURAV J JOSHI` },
-      { property: "og:description", content: `${loaderData.title}, directed by Gaurav J Joshi.` },
+  head: ({ params }) => {
+    const project = getProject(params.slug);
+    return {
+      meta: project ? [
+      { title: `${project.title.toUpperCase()} — GAURAV J JOSHI` },
+      { name: "description", content: `${project.title}, directed by Gaurav J Joshi.` },
+      { property: "og:title", content: `${project.title.toUpperCase()} — GAURAV J JOSHI` },
+      { property: "og:description", content: `${project.title}, directed by Gaurav J Joshi.` },
       { property: "og:type", content: "video.other" },
       { name: "twitter:card", content: "summary_large_image" },
     ] : [],
-  }),
+    };
+  },
   component: ProjectPage,
   notFoundComponent: ProjectNotFound,
-  errorComponent: ProjectError,
 });
 
 function ProjectPage() {
-  const project = Route.useLoaderData();
+  const project = Route.useLoaderData() as Project | undefined;
+  if (!project) return <ProjectNotFound />;
 
   return (
     <main className="project-main">
