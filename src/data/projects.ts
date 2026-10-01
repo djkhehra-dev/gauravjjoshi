@@ -46,7 +46,21 @@ export const projects: Project[] = [
   vimeoId,
   heading: title,
   description: `${category} film, ${year}.`,
-  credits: ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
+  credits: slug === "zero-man-of-india" ? [
+    "Director/Editor/Producer: Gaurav J Joshi",
+    "Writer: Sneha",
+    "DP: Vandita Jain",
+    "Line Producer: Bisma Farooq",
+    "Assistant Director: Sehar Qazi",
+    "Voiceover: Babla Kochhar",
+    "Colorist: Manohar Naik",
+    "Sound Design: Kapil Dev Singh",
+    "Music Composer: Abhilash Lakra",
+    "1st AC: Rakesh",
+    "2nd AC: Aaditya Ganguly",
+    "Production Manager: Talib Rayaz",
+    "Lightman: Santosh Kumar",
+  ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
   stills: [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
