@@ -60,6 +60,18 @@ export const projects: Project[] = [
     "2nd AC: Aaditya Ganguly",
     "Production Manager: Talib Rayaz",
     "Lightman: Santosh Kumar",
+  ] : slug === "talisman-awards" ? [
+    "Director/Producer: Gaurav J Joshi",
+    "Writer: Sneha",
+    "DP: Durjey Soni",
+    "Editor: Moon Bohra",
+    "Sound Designer: Carlos Maestre Conejero",
+    "Colorist: Manohar Naik",
+    "AC Ladkah: Jigmet Lotus",
+    "AC Mumbai: Umang Sampat",
+    "Drone: Padma Lotus",
+    "Music: Jameson Nathan Jones",
+    "Voiceover: Orion Ray",
   ] : slug === "thaaragai-aarathana" ? [
     "Director/Producer: Gaurav J Joshi",
     "Writer: Kayra",
