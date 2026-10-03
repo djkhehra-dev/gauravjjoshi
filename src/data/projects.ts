@@ -90,6 +90,16 @@ export const projects: Project[] = [
     "Boat Captain: Chandru",
     "Boat 1st Assistant: Appu",
     "Boat 2nd Assistant: Jayaseelan",
+  ] : slug === "the-last-printer-of-bela" ? [
+    "Director/Producer: Gaurav J Joshi",
+    "DP: Umang Sampat",
+    "Editor & Colorist: Moon Bohra",
+    "Music: Artlist.io",
+  ] : slug === "amruta-mashroo-weaver" ? [
+    "Director/Editor/Producer: Gaurav J Joshi",
+    "DP: Umang Sampat",
+    "Colorist:",
+    "Music: Artlist.io",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
   stills: [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
