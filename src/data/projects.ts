@@ -124,6 +124,11 @@ export const projects: Project[] = [
     "AC: Piyush Pal Singh",
     "Sound Design: Kapil Dev Singh",
     "Colorist: Harshit Saini",
+  ] : slug === "the-quilting-project" ? [
+    "Director/Producer: Gaurav J Joshi",
+    "DP: Umang Sampat",
+    "Editor/Colorist: Moon Bohra",
+    "Music: Artlist.io",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
   stills: [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
