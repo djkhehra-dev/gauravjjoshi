@@ -10,6 +10,21 @@ import cover09 from "@/assets/vimeo-09.jpg";
 import cover10 from "@/assets/vimeo-10.jpg";
 import cover12 from "@/assets/vimeo-12.jpg";
 import thaaragaiCover from "@/assets/thaaragai-aarathana.jpg";
+import talismanStill01 from "@/assets/talisman-stills/talisman-01.jpg.asset.json";
+import talismanStill02 from "@/assets/talisman-stills/talisman-02.jpg.asset.json";
+import talismanStill03 from "@/assets/talisman-stills/talisman-03.jpg.asset.json";
+import talismanStill04 from "@/assets/talisman-stills/talisman-04.jpg.asset.json";
+import talismanStill05 from "@/assets/talisman-stills/talisman-05.jpg.asset.json";
+import talismanStill06 from "@/assets/talisman-stills/talisman-06.jpg.asset.json";
+
+const talismanStills = [
+  talismanStill01.url,
+  talismanStill02.url,
+  talismanStill03.url,
+  talismanStill04.url,
+  talismanStill05.url,
+  talismanStill06.url,
+];
 
 export type Project = {
   title: string;
@@ -134,7 +149,9 @@ export const projects: Project[] = [
     "DP: Manoj Kumar",
     "\n",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
-  stills: [thumbnail, thumbnail, thumbnail, thumbnail],
+  stills: slug === "talisman-awards"
+    ? talismanStills
+    : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
