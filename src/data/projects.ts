@@ -96,9 +96,9 @@ export const projects: Project[] = [
     "Colorist: Vipin Singh",
     "Music: Artlist.io",
   ] : slug === "amruta-mashroo-weaver" ? [
-    "Director/Editor/Producer: Gaurav J Joshi",
+    "Director/Producer: Gaurav J Joshi",
     "DP: Umang Sampat",
-    "Colorist:",
+    "Editor/Colorist: Moon Bohra",
     "Music: Artlist.io",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
   stills: [thumbnail, thumbnail, thumbnail, thumbnail],
