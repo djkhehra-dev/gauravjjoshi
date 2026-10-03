@@ -91,9 +91,9 @@ export const projects: Project[] = [
     "Boat 1st Assistant: Appu",
     "Boat 2nd Assistant: Jayaseelan",
   ] : slug === "the-last-printer-of-bela" ? [
-    "Director/Producer: Gaurav J Joshi",
+    "Director/Editor/Producer: Gaurav J Joshi",
     "DP: Umang Sampat",
-    "Editor & Colorist: Moon Bohra",
+    "Colorist: Vipin Singh",
     "Music: Artlist.io",
   ] : slug === "amruta-mashroo-weaver" ? [
     "Director/Editor/Producer: Gaurav J Joshi",
