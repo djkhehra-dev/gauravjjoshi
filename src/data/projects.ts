@@ -129,6 +129,10 @@ export const projects: Project[] = [
     "DP: Umang Sampat",
     "Editor/Colorist: Moon Bohra",
     "Music: Artlist.io",
+  ] : slug === "world-environment-day" ? [
+    "Director/Editor/Producer: Gaurav J Joshi",
+    "DP: Manoj Kumar",
+    "\n",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
   stills: [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
