@@ -104,6 +104,9 @@ export const projects: Project[] = [
     "Director/Editor/Producer: Gaurav J Joshi",
     "Writer: Sneha",
     "DP: Archit Singh",
+    "AC: Piyush Pal Singh",
+    "Sound Design: Kapil Dev Singh",
+    "Colorist: Harshit Saini",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
   stills: [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
