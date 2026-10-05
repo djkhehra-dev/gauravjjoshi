@@ -13,3 +13,4 @@
 
 - [x] Reduce the homepage social footer to a smaller, minimal scale
 - [x] Replace the Zero Man of India placeholder stills with eight supplied film screengrabs
+- [x] Replace the Hola Prime placeholder stills with six supplied film screengrabs

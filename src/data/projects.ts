@@ -34,6 +34,21 @@ import zeroManStill05 from "@/assets/zero-man-stills/zero-man-05.webp.asset.json
 import zeroManStill06 from "@/assets/zero-man-stills/zero-man-06.webp.asset.json";
 import zeroManStill07 from "@/assets/zero-man-stills/zero-man-07.webp.asset.json";
 import zeroManStill08 from "@/assets/zero-man-stills/zero-man-08.webp.asset.json";
+import holaPrimeStill01 from "@/assets/hola-prime-stills/hola-prime-01.png.asset.json";
+import holaPrimeStill02 from "@/assets/hola-prime-stills/hola-prime-02.png.asset.json";
+import holaPrimeStill03 from "@/assets/hola-prime-stills/hola-prime-03.png.asset.json";
+import holaPrimeStill04 from "@/assets/hola-prime-stills/hola-prime-04.png.asset.json";
+import holaPrimeStill05 from "@/assets/hola-prime-stills/hola-prime-05.png.asset.json";
+import holaPrimeStill06 from "@/assets/hola-prime-stills/hola-prime-06.png.asset.json";
+
+const holaPrimeStills = [
+  holaPrimeStill01.url,
+  holaPrimeStill02.url,
+  holaPrimeStill03.url,
+  holaPrimeStill04.url,
+  holaPrimeStill05.url,
+  holaPrimeStill06.url,
+];
 
 const zeroManStills = [
   zeroManStill01.url,
@@ -196,8 +211,10 @@ export const projects: Project[] = [
     : slug === "talisman-awards"
       ? talismanStills
       : slug === "thaaragai-aarathana"
-      ? thaaragaiStills
-      : [thumbnail, thumbnail, thumbnail, thumbnail],
+        ? thaaragaiStills
+        : slug === "hola-prime"
+          ? holaPrimeStills
+          : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
