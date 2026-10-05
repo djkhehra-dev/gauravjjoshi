@@ -19,3 +19,4 @@
 - [x] Replace Amruta placeholder stills with ten supplied film screengrabs
 - [x] Move the first Amruta screengrab to the end of its gallery
 - [x] Replace The Last Printer of Bela placeholders with ten supplied screengrabs
+- [x] Replace World Environment Day placeholders with six supplied screengrabs
