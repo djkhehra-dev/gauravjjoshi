@@ -240,6 +240,13 @@
   width: max-content;
   animation: recognition-scroll 31s linear infinite;
 }
+
+@media (max-width: 768px) {
+    .home-recognition-track {
+        animation-duration: 55s;
+    }
+}
+
 .home-recognition:hover .home-recognition-track { animation-play-state: paused; }
 .home-recognition-list { display: flex; flex: none; margin: 0; padding: 0; list-style: none; }
 .home-recognition-list li { flex: none; white-space: nowrap; }

@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       { title: "GAURAV J JOSHI — FILMMAKER" },
       { name: "description", content: "Gaurav J Joshi is a filmmaker and commercial director creating documentary-style films, branded stories and films rooted in people, craft and culture." },
       { property: "og:title", content: "GAURAV J JOSHI — FILMMAKER" },
-      { property: "og:description", content: "Documentary-style films, branded stories and films rooted in people, craft and culture." },
+      { property: "og:description", content: "" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
