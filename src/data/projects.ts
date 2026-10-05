@@ -40,6 +40,21 @@ import holaPrimeStill03 from "@/assets/hola-prime-stills/hola-prime-03.png.asset
 import holaPrimeStill04 from "@/assets/hola-prime-stills/hola-prime-04.png.asset.json";
 import holaPrimeStill05 from "@/assets/hola-prime-stills/hola-prime-05.png.asset.json";
 import holaPrimeStill06 from "@/assets/hola-prime-stills/hola-prime-06.png.asset.json";
+import quiltingProjectStill01 from "@/assets/quilting-project-stills/quilting-project-01.png.asset.json";
+import quiltingProjectStill02 from "@/assets/quilting-project-stills/quilting-project-02.webp.asset.json";
+import quiltingProjectStill03 from "@/assets/quilting-project-stills/quilting-project-03.webp.asset.json";
+import quiltingProjectStill04 from "@/assets/quilting-project-stills/quilting-project-04.webp.asset.json";
+import quiltingProjectStill05 from "@/assets/quilting-project-stills/quilting-project-05.png.asset.json";
+import quiltingProjectStill06 from "@/assets/quilting-project-stills/quilting-project-06.png.asset.json";
+
+const quiltingProjectStills = [
+  quiltingProjectStill01.url,
+  quiltingProjectStill02.url,
+  quiltingProjectStill03.url,
+  quiltingProjectStill04.url,
+  quiltingProjectStill05.url,
+  quiltingProjectStill06.url,
+];
 
 const holaPrimeStills = [
   holaPrimeStill01.url,
@@ -214,7 +229,9 @@ export const projects: Project[] = [
         ? thaaragaiStills
         : slug === "hola-prime"
           ? holaPrimeStills
-          : [thumbnail, thumbnail, thumbnail, thumbnail],
+          : slug === "the-quilting-project"
+            ? quiltingProjectStills
+            : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
