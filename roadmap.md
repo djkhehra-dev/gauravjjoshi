@@ -11,4 +11,4 @@
 - [x] Add Gaurav's full biography and recognition details to the reference-matched contact page
 - [x] Restyle the centered identity as an editorial serif wordmark with a muted FILM DIRECTOR subtitle
 
-- [ ] Reduce the homepage social footer to a smaller, minimal scale
+- [x] Reduce the homepage social footer to a smaller, minimal scale
