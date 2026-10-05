@@ -46,14 +46,17 @@ import quiltingProjectStill03 from "@/assets/quilting-project-stills/quilting-pr
 import quiltingProjectStill04 from "@/assets/quilting-project-stills/quilting-project-04.webp.asset.json";
 import quiltingProjectStill05 from "@/assets/quilting-project-stills/quilting-project-05.png.asset.json";
 import quiltingProjectStill06 from "@/assets/quilting-project-stills/quilting-project-06.png.asset.json";
+import quiltingProjectStill07 from "@/assets/quilting-project-stills/quilting-project-07.jpg.asset.json";
+import quiltingProjectStill08 from "@/assets/quilting-project-stills/quilting-project-08.jpg.asset.json";
+import quiltingProjectStill09 from "@/assets/quilting-project-stills/quilting-project-09.jpg.asset.json";
 
 const quiltingProjectStills = [
   quiltingProjectStill01.url,
-  quiltingProjectStill02.url,
   quiltingProjectStill03.url,
-  quiltingProjectStill04.url,
-  quiltingProjectStill05.url,
   quiltingProjectStill06.url,
+  quiltingProjectStill07.url,
+  quiltingProjectStill08.url,
+  quiltingProjectStill09.url,
 ];
 
 const holaPrimeStills = [
