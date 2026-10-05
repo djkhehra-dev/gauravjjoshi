@@ -74,6 +74,21 @@ import lastPrinterStill07 from "@/assets/last-printer-stills/last-printer-07.web
 import lastPrinterStill08 from "@/assets/last-printer-stills/last-printer-08.webp.asset.json";
 import lastPrinterStill09 from "@/assets/last-printer-stills/last-printer-09.webp.asset.json";
 import lastPrinterStill10 from "@/assets/last-printer-stills/last-printer-10.webp.asset.json";
+import worldEnvironmentStill01 from "@/assets/world-environment-day-stills/world-environment-day-01.webp.asset.json";
+import worldEnvironmentStill02 from "@/assets/world-environment-day-stills/world-environment-day-02.webp.asset.json";
+import worldEnvironmentStill03 from "@/assets/world-environment-day-stills/world-environment-day-03.png.asset.json";
+import worldEnvironmentStill04 from "@/assets/world-environment-day-stills/world-environment-day-04.png.asset.json";
+import worldEnvironmentStill05 from "@/assets/world-environment-day-stills/world-environment-day-05.png.asset.json";
+import worldEnvironmentStill06 from "@/assets/world-environment-day-stills/world-environment-day-06.png.asset.json";
+
+const worldEnvironmentStills = [
+  worldEnvironmentStill01.url,
+  worldEnvironmentStill02.url,
+  worldEnvironmentStill03.url,
+  worldEnvironmentStill04.url,
+  worldEnvironmentStill05.url,
+  worldEnvironmentStill06.url,
+];
 
 const lastPrinterStills = [
   lastPrinterStill01.url,
@@ -302,7 +317,9 @@ export const projects: Project[] = [
                 ? origamiStills
                 : slug === "amruta-mashroo-weaver"
                   ? amrutaStills
-                  : [thumbnail, thumbnail, thumbnail, thumbnail],
+                  : slug === "world-environment-day"
+                    ? worldEnvironmentStills
+                    : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
