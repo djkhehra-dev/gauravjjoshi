@@ -12,3 +12,4 @@
 - [x] Restyle the centered identity as an editorial serif wordmark with a muted FILM DIRECTOR subtitle
 
 - [x] Reduce the homepage social footer to a smaller, minimal scale
+- [x] Replace the Zero Man of India placeholder stills with eight supplied film screengrabs
