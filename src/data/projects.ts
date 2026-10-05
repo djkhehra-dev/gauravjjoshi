@@ -64,6 +64,29 @@ import amrutaStill07 from "@/assets/amruta-stills/amruta-07.webp.asset.json";
 import amrutaStill08 from "@/assets/amruta-stills/amruta-08.webp.asset.json";
 import amrutaStill09 from "@/assets/amruta-stills/amruta-09.webp.asset.json";
 import amrutaStill10 from "@/assets/amruta-stills/amruta-10.webp.asset.json";
+import lastPrinterStill01 from "@/assets/last-printer-stills/last-printer-01.webp.asset.json";
+import lastPrinterStill02 from "@/assets/last-printer-stills/last-printer-02.png.asset.json";
+import lastPrinterStill03 from "@/assets/last-printer-stills/last-printer-03.webp.asset.json";
+import lastPrinterStill04 from "@/assets/last-printer-stills/last-printer-04.webp.asset.json";
+import lastPrinterStill05 from "@/assets/last-printer-stills/last-printer-05.webp.asset.json";
+import lastPrinterStill06 from "@/assets/last-printer-stills/last-printer-06.webp.asset.json";
+import lastPrinterStill07 from "@/assets/last-printer-stills/last-printer-07.webp.asset.json";
+import lastPrinterStill08 from "@/assets/last-printer-stills/last-printer-08.webp.asset.json";
+import lastPrinterStill09 from "@/assets/last-printer-stills/last-printer-09.webp.asset.json";
+import lastPrinterStill10 from "@/assets/last-printer-stills/last-printer-10.webp.asset.json";
+
+const lastPrinterStills = [
+  lastPrinterStill01.url,
+  lastPrinterStill02.url,
+  lastPrinterStill03.url,
+  lastPrinterStill04.url,
+  lastPrinterStill05.url,
+  lastPrinterStill06.url,
+  lastPrinterStill07.url,
+  lastPrinterStill08.url,
+  lastPrinterStill09.url,
+  lastPrinterStill10.url,
+];
 
 const amrutaStills = [
   amrutaStill02.url,
@@ -271,13 +294,15 @@ export const projects: Project[] = [
         ? thaaragaiStills
         : slug === "hola-prime"
           ? holaPrimeStills
-          : slug === "the-quilting-project"
-            ? quiltingProjectStills
-            : slug === "the-art-of-origami"
-              ? origamiStills
-              : slug === "amruta-mashroo-weaver"
-                ? amrutaStills
-                : [thumbnail, thumbnail, thumbnail, thumbnail],
+          : slug === "the-last-printer-of-bela"
+            ? lastPrinterStills
+            : slug === "the-quilting-project"
+              ? quiltingProjectStills
+              : slug === "the-art-of-origami"
+                ? origamiStills
+                : slug === "amruta-mashroo-weaver"
+                  ? amrutaStills
+                  : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {

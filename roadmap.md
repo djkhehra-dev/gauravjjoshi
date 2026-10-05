@@ -18,3 +18,4 @@
 - [x] Replace The Art of Origami placeholder stills with eight supplied film screengrabs
 - [x] Replace Amruta placeholder stills with ten supplied film screengrabs
 - [x] Move the first Amruta screengrab to the end of its gallery
+- [x] Replace The Last Printer of Bela placeholders with ten supplied screengrabs
