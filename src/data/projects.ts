@@ -46,6 +46,25 @@ import quiltingProjectStill06 from "@/assets/quilting-project-stills/quilting-pr
 import quiltingProjectStill07 from "@/assets/quilting-project-stills/quilting-project-07.jpg.asset.json";
 import quiltingProjectStill08 from "@/assets/quilting-project-stills/quilting-project-08.jpg.asset.json";
 import quiltingProjectStill09 from "@/assets/quilting-project-stills/quilting-project-09.jpg.asset.json";
+import origamiStill01 from "@/assets/origami-stills/origami-01.png.asset.json";
+import origamiStill02 from "@/assets/origami-stills/origami-02.png.asset.json";
+import origamiStill03 from "@/assets/origami-stills/origami-03.png.asset.json";
+import origamiStill04 from "@/assets/origami-stills/origami-04.png.asset.json";
+import origamiStill05 from "@/assets/origami-stills/origami-05.png.asset.json";
+import origamiStill06 from "@/assets/origami-stills/origami-06.png.asset.json";
+import origamiStill07 from "@/assets/origami-stills/origami-07.png.asset.json";
+import origamiStill08 from "@/assets/origami-stills/origami-08.png.asset.json";
+
+const origamiStills = [
+  origamiStill01.url,
+  origamiStill02.url,
+  origamiStill03.url,
+  origamiStill04.url,
+  origamiStill05.url,
+  origamiStill06.url,
+  origamiStill07.url,
+  origamiStill08.url,
+];
 
 const quiltingProjectStills = [
   quiltingProjectStill01.url,
@@ -231,7 +250,9 @@ export const projects: Project[] = [
           ? holaPrimeStills
           : slug === "the-quilting-project"
             ? quiltingProjectStills
-            : [thumbnail, thumbnail, thumbnail, thumbnail],
+            : slug === "the-art-of-origami"
+              ? origamiStills
+              : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
