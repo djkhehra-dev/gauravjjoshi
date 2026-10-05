@@ -41,10 +41,7 @@ import holaPrimeStill04 from "@/assets/hola-prime-stills/hola-prime-04.png.asset
 import holaPrimeStill05 from "@/assets/hola-prime-stills/hola-prime-05.png.asset.json";
 import holaPrimeStill06 from "@/assets/hola-prime-stills/hola-prime-06.png.asset.json";
 import quiltingProjectStill01 from "@/assets/quilting-project-stills/quilting-project-01.png.asset.json";
-import quiltingProjectStill02 from "@/assets/quilting-project-stills/quilting-project-02.webp.asset.json";
 import quiltingProjectStill03 from "@/assets/quilting-project-stills/quilting-project-03.webp.asset.json";
-import quiltingProjectStill04 from "@/assets/quilting-project-stills/quilting-project-04.webp.asset.json";
-import quiltingProjectStill05 from "@/assets/quilting-project-stills/quilting-project-05.png.asset.json";
 import quiltingProjectStill06 from "@/assets/quilting-project-stills/quilting-project-06.png.asset.json";
 import quiltingProjectStill07 from "@/assets/quilting-project-stills/quilting-project-07.jpg.asset.json";
 import quiltingProjectStill08 from "@/assets/quilting-project-stills/quilting-project-08.jpg.asset.json";
