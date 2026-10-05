@@ -26,6 +26,25 @@ import thaaragaiStill07 from "@/assets/thaaragai-stills/thaaragai-07.jpg.asset.j
 import thaaragaiStill08 from "@/assets/thaaragai-stills/thaaragai-08.jpg.asset.json";
 import thaaragaiStill09 from "@/assets/thaaragai-stills/thaaragai-09.jpg.asset.json";
 import thaaragaiStill10 from "@/assets/thaaragai-stills/thaaragai-10.jpg.asset.json";
+import zeroManStill01 from "@/assets/zero-man-stills/zero-man-01.webp.asset.json";
+import zeroManStill02 from "@/assets/zero-man-stills/zero-man-02.webp.asset.json";
+import zeroManStill03 from "@/assets/zero-man-stills/zero-man-03.webp.asset.json";
+import zeroManStill04 from "@/assets/zero-man-stills/zero-man-04.webp.asset.json";
+import zeroManStill05 from "@/assets/zero-man-stills/zero-man-05.webp.asset.json";
+import zeroManStill06 from "@/assets/zero-man-stills/zero-man-06.webp.asset.json";
+import zeroManStill07 from "@/assets/zero-man-stills/zero-man-07.webp.asset.json";
+import zeroManStill08 from "@/assets/zero-man-stills/zero-man-08.webp.asset.json";
+
+const zeroManStills = [
+  zeroManStill01.url,
+  zeroManStill02.url,
+  zeroManStill03.url,
+  zeroManStill04.url,
+  zeroManStill05.url,
+  zeroManStill06.url,
+  zeroManStill07.url,
+  zeroManStill08.url,
+];
 
 const talismanStills = [
   talismanStill01.url,
@@ -172,11 +191,13 @@ export const projects: Project[] = [
     "DP: Manoj Kumar",
     "\n",
   ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
-  stills: slug === "talisman-awards"
-    ? talismanStills
-    : slug === "thaaragai-aarathana"
+  stills: slug === "zero-man-of-india"
+    ? zeroManStills
+    : slug === "talisman-awards"
+      ? talismanStills
+      : slug === "thaaragai-aarathana"
       ? thaaragaiStills
-    : [thumbnail, thumbnail, thumbnail, thumbnail],
+      : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
