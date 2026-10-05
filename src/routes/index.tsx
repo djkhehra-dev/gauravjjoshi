@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { HomeSocialFooter } from "@/components/home-social-footer";
 import { projects } from "@/data/projects";
 
 const recognition = [
@@ -62,6 +63,7 @@ function Index() {
           </article>
         ))}
       </section>
+      <HomeSocialFooter />
     </main>
   );
 }
