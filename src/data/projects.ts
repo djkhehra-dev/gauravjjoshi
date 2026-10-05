@@ -66,7 +66,6 @@ import amrutaStill09 from "@/assets/amruta-stills/amruta-09.webp.asset.json";
 import amrutaStill10 from "@/assets/amruta-stills/amruta-10.webp.asset.json";
 
 const amrutaStills = [
-  amrutaStill01.url,
   amrutaStill02.url,
   amrutaStill03.url,
   amrutaStill04.url,
@@ -76,6 +75,7 @@ const amrutaStills = [
   amrutaStill08.url,
   amrutaStill09.url,
   amrutaStill10.url,
+  amrutaStill01.url,
 ];
 
 const origamiStills = [
