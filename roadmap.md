@@ -16,3 +16,4 @@
 - [x] Replace the Hola Prime placeholder stills with six supplied film screengrabs
 - [x] Replace The Quilting Project placeholder stills with six supplied film screengrabs
 - [x] Replace The Art of Origami placeholder stills with eight supplied film screengrabs
+- [x] Replace Amruta placeholder stills with ten supplied film screengrabs

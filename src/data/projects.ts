@@ -54,6 +54,29 @@ import origamiStill05 from "@/assets/origami-stills/origami-05.png.asset.json";
 import origamiStill06 from "@/assets/origami-stills/origami-06.png.asset.json";
 import origamiStill07 from "@/assets/origami-stills/origami-07.png.asset.json";
 import origamiStill08 from "@/assets/origami-stills/origami-08.png.asset.json";
+import amrutaStill01 from "@/assets/amruta-stills/amruta-01.webp.asset.json";
+import amrutaStill02 from "@/assets/amruta-stills/amruta-02.webp.asset.json";
+import amrutaStill03 from "@/assets/amruta-stills/amruta-03.webp.asset.json";
+import amrutaStill04 from "@/assets/amruta-stills/amruta-04.webp.asset.json";
+import amrutaStill05 from "@/assets/amruta-stills/amruta-05.webp.asset.json";
+import amrutaStill06 from "@/assets/amruta-stills/amruta-06.webp.asset.json";
+import amrutaStill07 from "@/assets/amruta-stills/amruta-07.webp.asset.json";
+import amrutaStill08 from "@/assets/amruta-stills/amruta-08.webp.asset.json";
+import amrutaStill09 from "@/assets/amruta-stills/amruta-09.webp.asset.json";
+import amrutaStill10 from "@/assets/amruta-stills/amruta-10.webp.asset.json";
+
+const amrutaStills = [
+  amrutaStill01.url,
+  amrutaStill02.url,
+  amrutaStill03.url,
+  amrutaStill04.url,
+  amrutaStill05.url,
+  amrutaStill06.url,
+  amrutaStill07.url,
+  amrutaStill08.url,
+  amrutaStill09.url,
+  amrutaStill10.url,
+];
 
 const origamiStills = [
   origamiStill02.url,
@@ -252,7 +275,9 @@ export const projects: Project[] = [
             ? quiltingProjectStills
             : slug === "the-art-of-origami"
               ? origamiStills
-              : [thumbnail, thumbnail, thumbnail, thumbnail],
+              : slug === "amruta-mashroo-weaver"
+                ? amrutaStills
+                : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
