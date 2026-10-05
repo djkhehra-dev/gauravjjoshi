@@ -62,7 +62,7 @@ export function HomeSocialFooter() {
             target="_blank"
             rel="noopener"
             aria-label={label}
-            style={{ "--social-index": index } as React.CSSProperties}
+            data-social-index={index}
           >
             <Icon size={32} strokeWidth={2} aria-hidden="true" />
           </a>
@@ -72,7 +72,7 @@ export function HomeSocialFooter() {
           target="_blank"
           rel="noopener"
           aria-label="Vimeo"
-          style={{ "--social-index": 2 } as React.CSSProperties}
+          data-social-index="2"
         >
           <VimeoMark />
         </a>
