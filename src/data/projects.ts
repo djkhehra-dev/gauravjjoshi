@@ -56,7 +56,6 @@ import origamiStill07 from "@/assets/origami-stills/origami-07.png.asset.json";
 import origamiStill08 from "@/assets/origami-stills/origami-08.png.asset.json";
 
 const origamiStills = [
-  origamiStill01.url,
   origamiStill02.url,
   origamiStill03.url,
   origamiStill04.url,
@@ -64,6 +63,7 @@ const origamiStills = [
   origamiStill06.url,
   origamiStill07.url,
   origamiStill08.url,
+  origamiStill01.url,
 ];
 
 const quiltingProjectStills = [
