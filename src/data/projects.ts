@@ -25,6 +25,7 @@ import thaaragaiStill06 from "@/assets/thaaragai-stills/thaaragai-06.jpg.asset.j
 import thaaragaiStill07 from "@/assets/thaaragai-stills/thaaragai-07.jpg.asset.json";
 import thaaragaiStill08 from "@/assets/thaaragai-stills/thaaragai-08.jpg.asset.json";
 import thaaragaiStill09 from "@/assets/thaaragai-stills/thaaragai-09.jpg.asset.json";
+import thaaragaiStill10 from "@/assets/thaaragai-stills/thaaragai-10.jpg.asset.json";
 
 const talismanStills = [
   talismanStill01.url,
@@ -45,6 +46,7 @@ const thaaragaiStills = [
   thaaragaiStill07.url,
   thaaragaiStill08.url,
   thaaragaiStill09.url,
+  thaaragaiStill10.url,
 ];
 
 export type Project = {
