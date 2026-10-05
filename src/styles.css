@@ -223,7 +223,7 @@
 
 .site-header .text-role { margin-top: 4px; }
 
-.home-main { width: min(734px, 92vw); margin: 0 auto; padding-bottom: 100px; }
+.home-main { width: min(734px, 92vw); margin: 0 auto; }
 .home-recognition {
   overflow: hidden;
   margin-top: -29px;
@@ -280,6 +280,44 @@
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.07em;
+}
+
+.home-social-footer {
+  display: flex;
+  justify-content: center;
+  padding: 72px 0 52px;
+  background: var(--background);
+}
+.home-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.home-social-links a {
+  --social-delay: 0ms;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  color: var(--primary);
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--social-delay);
+}
+.home-social-links a[data-social-index="1"] { --social-delay: 150ms; }
+.home-social-links a[data-social-index="2"] { --social-delay: 300ms; }
+.home-social-footer.is-visible .home-social-links a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.home-social-links svg { display: block; }
+
+@media (hover: hover) and (pointer: fine) {
+  .home-social-footer.is-visible .home-social-links a:hover { transform: translateY(-3px); }
 }
 
 @media (hover: hover) and (pointer: fine) {
