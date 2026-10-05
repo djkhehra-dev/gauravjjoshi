@@ -10,3 +10,5 @@
 - [x] Match the supplied open-menu screenshot with compact horizontal links, divider, and dotted close icon
 - [x] Add Gaurav's full biography and recognition details to the reference-matched contact page
 - [x] Restyle the centered identity as an editorial serif wordmark with a muted FILM DIRECTOR subtitle
+
+- [x] Reduce the homepage social footer to a smaller, minimal scale
