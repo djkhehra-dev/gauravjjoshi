@@ -380,7 +380,9 @@ export const projects: Project[] = [
                     ? aaafxStills
                     : slug === "iss-world-people-make-places"
                       ? issWorldStills
-                      : [thumbnail, thumbnail, thumbnail, thumbnail],
+                      : slug === "good-earth-heritage-foundation"
+                        ? goodEarthStills
+                        : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
