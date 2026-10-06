@@ -257,7 +257,7 @@ export const projects: Project[] = [
     ["Amruta : The First Mashroo Weaver", "amruta-mashroo-weaver", "2026", "Good Earth", cover04, "1193526384"],
     ["The Art of Origami", "the-art-of-origami", "2023", "Film", cover05, "850808174"],
     ["The Quilting Project", "the-quilting-project", "2025", "Good Earth", cover06, "1044260385"],
-    ["GHF", "good-earth-heritage-foundation", "2026", "Teaser", cover09, "1165587330"],
+    ["GEHF", "good-earth-heritage-foundation", "2026", "Teaser", cover09, "1165587330"],
     ["#World Environment Day", "world-environment-day", "2023", "Film", cover07, "845965341"],
     ["AAAFx", "aaafx", "2024", "Director’s Cut", cover10, "920151752"],
     ["ISS World - People Make Places | EP 02", "iss-world-people-make-places", "2025", "Film", cover12, "1050458130"],
@@ -375,6 +375,7 @@ export const projects: Project[] = [
         "DP: Umang Sampat",
         "Executive Producer: Dhruv Sharma",
         "Editor: Pranav Patil",
+        "Colorist: Manohar Naik",
         "Music: Artlist.io", "\n",
     ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
     stills: slug === "zero-man-of-india"
