@@ -20,3 +20,4 @@
 - [x] Move the first Amruta screengrab to the end of its gallery
 - [x] Replace The Last Printer of Bela placeholders with ten supplied screengrabs
 - [x] Replace World Environment Day placeholders with six supplied screengrabs
+- [x] Replace ISS World placeholders with six supplied screengrabs
