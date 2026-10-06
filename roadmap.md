@@ -13,3 +13,12 @@
 
 - [x] Reduce the homepage social footer to a smaller, minimal scale
 - [x] Replace the Zero Man of India placeholder stills with eight supplied film screengrabs
+- [x] Replace the Hola Prime placeholder stills with six supplied film screengrabs
+- [x] Replace The Quilting Project placeholder stills with six supplied film screengrabs
+- [x] Replace The Art of Origami placeholder stills with eight supplied film screengrabs
+- [x] Replace Amruta placeholder stills with ten supplied film screengrabs
+- [x] Move the first Amruta screengrab to the end of its gallery
+- [x] Replace The Last Printer of Bela placeholders with ten supplied screengrabs
+- [x] Replace World Environment Day placeholders with six supplied screengrabs
+- [x] Replace ISS World placeholders with six supplied screengrabs
+- [x] Replace AAAFx placeholders with ten supplied screengrabs
