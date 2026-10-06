@@ -357,6 +357,8 @@ export const projects: Project[] = [
                   ? amrutaStills
                   : slug === "world-environment-day"
                     ? worldEnvironmentStills
+                  : slug === "aaafx"
+                    ? aaafxStills
                     : slug === "iss-world-people-make-places"
                       ? issWorldStills
                       : [thumbnail, thumbnail, thumbnail, thumbnail],
