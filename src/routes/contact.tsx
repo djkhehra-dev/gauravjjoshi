@@ -35,7 +35,7 @@ function ContactPage() {
           <p>Gaurav Joshi is an award-winning filmmaker based in New Delhi, working across narrative, commercial and documentary film.</p>
           <p>He is drawn to stories about people, places, craft and culture, and is interested in finding the details that make a story feel real. His films balance a strong visual approach with honest moments, often spending time with people and their worlds before shaping the story around them.</p>
           <p>Over the last 12 years, Gaurav has worked across advertising, branded content and film. His work has taken him across India, from working closely with craftspeople and communities to making films for brands and organisations.</p>
-
+                  <p>In 2026, Gaurav was shortlisted as one of six directors for McCann India’s Fresh Take, recognising emerging voices and new perspectives in filmmaking.</p>
           <section className="contact-recognition" aria-labelledby="recognition-title">
             <h2 id="recognition-title">Recognition</h2>
             <ul>

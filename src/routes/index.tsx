@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
     head: () => ({
         meta: [
             { title: "GAURAV J JOSHI — FILMMAKER" },
-            { name: "description", content: "Gaurav J Joshi is a filmmaker and commercial director creating documentary-style films, branded stories and films rooted in people, craft and culture." },
+            { name: "description", content: "" },
             { property: "og:title", content: "GAURAV J JOSHI — FILMMAKER" },
             { property: "og:description", content: "" },
             { property: "og:type", content: "website" },
