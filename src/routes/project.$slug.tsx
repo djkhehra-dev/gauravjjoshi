@@ -51,7 +51,7 @@ function ProjectPage() {
         </div>
 
         <div className="project-details">
-          <div className="stills-grid">
+          <div className={`stills-grid${project.slug === "good-earth-heritage-foundation" ? " stills-grid-4x5" : ""}`}>
             {project.stills.map((still, index) => (
               <img key={`${project.slug}-${index}`} src={still} alt={`${project.title} still ${index + 1}`} loading="lazy" />
             ))}
