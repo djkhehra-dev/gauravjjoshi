@@ -86,6 +86,16 @@ import issWorldStill03 from "@/assets/iss-world-stills/iss-world-03.webp.asset.j
 import issWorldStill04 from "@/assets/iss-world-stills/iss-world-04.webp.asset.json";
 import issWorldStill05 from "@/assets/iss-world-stills/iss-world-05.webp.asset.json";
 import issWorldStill06 from "@/assets/iss-world-stills/iss-world-06.webp.asset.json";
+import aaafxStill01 from "@/assets/aaafx-stills/aaafx-01.png.asset.json";
+import aaafxStill02 from "@/assets/aaafx-stills/aaafx-02.webp.asset.json";
+import aaafxStill03 from "@/assets/aaafx-stills/aaafx-03.webp.asset.json";
+import aaafxStill04 from "@/assets/aaafx-stills/aaafx-04.webp.asset.json";
+import aaafxStill05 from "@/assets/aaafx-stills/aaafx-05.webp.asset.json";
+import aaafxStill06 from "@/assets/aaafx-stills/aaafx-06.webp.asset.json";
+import aaafxStill07 from "@/assets/aaafx-stills/aaafx-07.webp.asset.json";
+import aaafxStill08 from "@/assets/aaafx-stills/aaafx-08.webp.asset.json";
+import aaafxStill09 from "@/assets/aaafx-stills/aaafx-09.webp.asset.json";
+import aaafxStill10 from "@/assets/aaafx-stills/aaafx-10.webp.asset.json";
 
 const issWorldStills = [
   issWorldStill01.url,
@@ -94,6 +104,19 @@ const issWorldStills = [
   issWorldStill04.url,
   issWorldStill05.url,
   issWorldStill06.url,
+];
+
+const aaafxStills = [
+  aaafxStill01.url,
+  aaafxStill02.url,
+  aaafxStill03.url,
+  aaafxStill04.url,
+  aaafxStill05.url,
+  aaafxStill06.url,
+  aaafxStill07.url,
+  aaafxStill08.url,
+  aaafxStill09.url,
+  aaafxStill10.url,
 ];
 
 const worldEnvironmentStills = [
