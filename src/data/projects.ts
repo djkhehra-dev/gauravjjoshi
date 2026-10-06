@@ -96,6 +96,14 @@ import aaafxStill07 from "@/assets/aaafx-stills/aaafx-07.webp";
 import aaafxStill08 from "@/assets/aaafx-stills/aaafx-08.webp";
 import aaafxStill09 from "@/assets/aaafx-stills/aaafx-09.webp";
 import aaafxStill10 from "@/assets/aaafx-stills/aaafx-10.webp";
+import goodEarthStill01 from "@/assets/good-earth-stills/good-earth-01.png.asset.json";
+import goodEarthStill02 from "@/assets/good-earth-stills/good-earth-02.png.asset.json";
+import goodEarthStill03 from "@/assets/good-earth-stills/good-earth-03.png.asset.json";
+import goodEarthStill04 from "@/assets/good-earth-stills/good-earth-04.png.asset.json";
+import goodEarthStill05 from "@/assets/good-earth-stills/good-earth-05.png.asset.json";
+import goodEarthStill06 from "@/assets/good-earth-stills/good-earth-06.png.asset.json";
+import goodEarthStill07 from "@/assets/good-earth-stills/good-earth-07.png.asset.json";
+import goodEarthStill08 from "@/assets/good-earth-stills/good-earth-08.png.asset.json";
 
 const issWorldStills = [
   issWorldStill01,
