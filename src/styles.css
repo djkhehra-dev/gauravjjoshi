@@ -349,6 +349,11 @@
 }
 .project-credits { margin-top: 18px; }
 
+/* Page-scoped override: 4:5 portrait screengrabs, good-earth-heritage-foundation page only */
+.stills-grid-4x5 img {
+  aspect-ratio: 4 / 5;
+}
+
 @utility text-contact-kicker {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
