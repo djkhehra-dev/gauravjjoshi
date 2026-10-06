@@ -114,6 +114,17 @@ const issWorldStills = [
   issWorldStill06,
 ];
 
+const goodEarthStills = [
+  goodEarthStill01,
+  goodEarthStill02,
+  goodEarthStill03,
+  goodEarthStill04,
+  goodEarthStill05,
+  goodEarthStill06,
+  goodEarthStill07,
+  goodEarthStill08,
+];
+
 const aaafxStills = [
   aaafxStill01,
   aaafxStill02,
