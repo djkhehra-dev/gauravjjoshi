@@ -106,285 +106,304 @@ import goodEarthStill07 from "@/assets/good-earth-stills/good-earth-07.png";
 import goodEarthStill08 from "@/assets/good-earth-stills/good-earth-08.png";
 
 const issWorldStills = [
-  issWorldStill01,
-  issWorldStill02,
-  issWorldStill03,
-  issWorldStill04,
-  issWorldStill05,
-  issWorldStill06,
+    issWorldStill01,
+    issWorldStill02,
+    issWorldStill03,
+    issWorldStill04,
+    issWorldStill05,
+    issWorldStill06,
 ];
 
 const goodEarthStills = [
-  goodEarthStill01,
-  goodEarthStill02,
-  goodEarthStill03,
-  goodEarthStill04,
-  goodEarthStill05,
-  goodEarthStill06,
-  goodEarthStill07,
-  goodEarthStill08,
+    goodEarthStill01,
+    goodEarthStill02,
+    goodEarthStill03,
+    goodEarthStill04,
+    goodEarthStill05,
+    goodEarthStill06,
+    goodEarthStill07,
+    goodEarthStill08,
 ];
 
 const aaafxStills = [
-  aaafxStill01,
-  aaafxStill02,
-  aaafxStill03,
-  aaafxStill04,
-  aaafxStill05,
-  aaafxStill06,
-  aaafxStill07,
-  aaafxStill08,
-  aaafxStill09,
-  aaafxStill10,
+    aaafxStill01,
+    aaafxStill02,
+    aaafxStill03,
+    aaafxStill04,
+    aaafxStill05,
+    aaafxStill06,
+    aaafxStill07,
+    aaafxStill08,
+    aaafxStill09,
+    aaafxStill10,
 ];
 
 const worldEnvironmentStills = [
-  worldEnvironmentStill01,
-  worldEnvironmentStill02,
-  worldEnvironmentStill03,
-  worldEnvironmentStill04,
-  worldEnvironmentStill05,
-  worldEnvironmentStill06,
+    worldEnvironmentStill01,
+    worldEnvironmentStill02,
+    worldEnvironmentStill03,
+    worldEnvironmentStill04,
+    worldEnvironmentStill05,
+    worldEnvironmentStill06,
 ];
 
 const lastPrinterStills = [
-  lastPrinterStill01,
-  lastPrinterStill02,
-  lastPrinterStill03,
-  lastPrinterStill04,
-  lastPrinterStill05,
-  lastPrinterStill06,
-  lastPrinterStill07,
-  lastPrinterStill08,
-  lastPrinterStill09,
-  lastPrinterStill10,
+    lastPrinterStill01,
+    lastPrinterStill02,
+    lastPrinterStill03,
+    lastPrinterStill04,
+    lastPrinterStill05,
+    lastPrinterStill06,
+    lastPrinterStill07,
+    lastPrinterStill08,
+    lastPrinterStill09,
+    lastPrinterStill10,
 ];
 
 const amrutaStills = [
-  amrutaStill02,
-  amrutaStill03,
-  amrutaStill04,
-  amrutaStill05,
-  amrutaStill06,
-  amrutaStill07,
-  amrutaStill08,
-  amrutaStill09,
-  amrutaStill10,
-  amrutaStill01,
+    amrutaStill02,
+    amrutaStill03,
+    amrutaStill04,
+    amrutaStill05,
+    amrutaStill06,
+    amrutaStill07,
+    amrutaStill08,
+    amrutaStill09,
+    amrutaStill10,
+    amrutaStill01,
 ];
 
 const origamiStills = [
-  origamiStill02,
-  origamiStill03,
-  origamiStill04,
-  origamiStill05,
-  origamiStill06,
-  origamiStill07,
-  origamiStill08,
-  origamiStill01,
+    origamiStill02,
+    origamiStill03,
+    origamiStill04,
+    origamiStill05,
+    origamiStill06,
+    origamiStill07,
+    origamiStill08,
+    origamiStill01,
 ];
 
 const quiltingProjectStills = [
-  quiltingProjectStill01,
-  quiltingProjectStill03,
-  quiltingProjectStill06,
-  quiltingProjectStill07,
-  quiltingProjectStill08,
-  quiltingProjectStill09,
+    quiltingProjectStill01,
+    quiltingProjectStill03,
+    quiltingProjectStill06,
+    quiltingProjectStill07,
+    quiltingProjectStill08,
+    quiltingProjectStill09,
 ];
 
 const holaPrimeStills = [
-  holaPrimeStill01,
-  holaPrimeStill02,
-  holaPrimeStill03,
-  holaPrimeStill04,
-  holaPrimeStill05,
-  holaPrimeStill06,
+    holaPrimeStill01,
+    holaPrimeStill02,
+    holaPrimeStill03,
+    holaPrimeStill04,
+    holaPrimeStill05,
+    holaPrimeStill06,
 ];
 
 const zeroManStills = [
-  zeroManStill01,
-  zeroManStill02,
-  zeroManStill03,
-  zeroManStill04,
-  zeroManStill05,
-  zeroManStill06,
-  zeroManStill07,
-  zeroManStill08,
+    zeroManStill01,
+    zeroManStill02,
+    zeroManStill03,
+    zeroManStill04,
+    zeroManStill05,
+    zeroManStill06,
+    zeroManStill07,
+    zeroManStill08,
 ];
 
 const talismanStills = [
-  talismanStill01,
-  talismanStill02,
-  talismanStill03,
-  talismanStill04,
-  talismanStill05,
-  talismanStill06,
+    talismanStill01,
+    talismanStill02,
+    talismanStill03,
+    talismanStill04,
+    talismanStill05,
+    talismanStill06,
 ];
 
 const thaaragaiStills = [
-  thaaragaiStill01,
-  thaaragaiStill02,
-  thaaragaiStill03,
-  thaaragaiStill04,
-  thaaragaiStill05,
-  thaaragaiStill06,
-  thaaragaiStill07,
-  thaaragaiStill08,
-  thaaragaiStill09,
-  thaaragaiStill10,
+    thaaragaiStill01,
+    thaaragaiStill02,
+    thaaragaiStill03,
+    thaaragaiStill04,
+    thaaragaiStill05,
+    thaaragaiStill06,
+    thaaragaiStill07,
+    thaaragaiStill08,
+    thaaragaiStill09,
+    thaaragaiStill10,
 ];
 
 export type Project = {
-  title: string;
-  slug: string;
-  year: string;
-  category: string;
-  thumbnail: string;
-  vimeoId: string;
-  heading: string;
-  description: string;
-  credits: string[];
-  stills: string[];
+    title: string;
+    slug: string;
+    year: string;
+    category: string;
+    thumbnail: string;
+    vimeoId: string;
+    heading: string;
+    description: string;
+    credits: string[];
+    stills: string[];
 };
 
 export const projects: Project[] = [
-  ["Zero Man of India", "zero-man-of-india", "2023", "Director’s Cut", cover01, "862934611"],
-  ["Talisman Awards", "talisman-awards", "2025", "Commercial", cover02, "1095198576"],
-  ["Thaaragai Aarathana", "thaaragai-aarathana", "2025", "Film", thaaragaiCover, "1043248175"],
-  ["Hola Prime", "hola-prime", "2025", "Commercial", cover08, "1064323156"],
-  ["The Last Printer of Bela", "the-last-printer-of-bela", "2025", "Good Earth", cover03, "1103740734"],
-  ["Amruta : The First Mashroo Weaver", "amruta-mashroo-weaver", "2026", "Good Earth", cover04, "1193526384"],
-  ["The Art of Origami", "the-art-of-origami", "2023", "Film", cover05, "850808174"],
-  ["The Quilting Project", "the-quilting-project", "2025", "Good Earth", cover06, "1044260385"],
-  ["Good Earth Heritage Foundation", "good-earth-heritage-foundation", "2026", "Teaser", cover09, "1165587330"],
-  ["#World Environment Day", "world-environment-day", "2023", "Film", cover07, "845965341"],
-  ["AAAFx", "aaafx", "2024", "Director’s Cut", cover10, "920151752"],
-  ["ISS World - People Make Places | EP 02", "iss-world-people-make-places", "2025", "Film", cover12, "1050458130"],
+    ["Zero Man of India", "zero-man-of-india", "2023", "Director’s Cut", cover01, "862934611"],
+    ["Talisman Awards", "talisman-awards", "2025", "Commercial", cover02, "1095198576"],
+    ["Thaaragai Aarathana", "thaaragai-aarathana", "2025", "Film", thaaragaiCover, "1043248175"],
+    ["Hola Prime", "hola-prime", "2025", "Commercial", cover08, "1064323156"],
+    ["The Last Printer of Bela", "the-last-printer-of-bela", "2025", "Good Earth", cover03, "1103740734"],
+    ["Amruta : The First Mashroo Weaver", "amruta-mashroo-weaver", "2026", "Good Earth", cover04, "1193526384"],
+    ["The Art of Origami", "the-art-of-origami", "2023", "Film", cover05, "850808174"],
+    ["The Quilting Project", "the-quilting-project", "2025", "Good Earth", cover06, "1044260385"],
+    ["GHF", "good-earth-heritage-foundation", "2026", "Teaser", cover09, "1165587330"],
+    ["#World Environment Day", "world-environment-day", "2023", "Film", cover07, "845965341"],
+    ["AAAFx", "aaafx", "2024", "Director’s Cut", cover10, "920151752"],
+    ["ISS World - People Make Places | EP 02", "iss-world-people-make-places", "2025", "Film", cover12, "1050458130"],
 ].map(([title, slug, year, category, thumbnail, vimeoId]) => ({
-  title,
-  slug,
-  year,
-  category,
-  thumbnail,
-  vimeoId,
-  heading: title,
-  description: `${category} film, ${year}.`,
-  credits: slug === "zero-man-of-india" ? [
-    "Director/Editor/Producer: Gaurav J Joshi",
-    "Writer: Sneha",
-    "DP: Vandita Jain",
-    "Line Producer: Bisma Farooq",
-    "Assistant Director: Sehar Qazi",
-    "Voiceover: Babla Kochhar",
-    "Colorist: Manohar Naik",
-    "Sound Design: Kapil Dev Singh",
-    "Music Composer: Abhilash Lakra",
-    "1st AC: Rakesh",
-    "2nd AC: Aaditya Ganguly",
-    "Production Manager: Talib Rayaz",
-    "Lightman: Santosh Kumar",
-  ] : slug === "talisman-awards" ? [
-    "Director/Producer: Gaurav J Joshi",
-    "Writer: Sneha",
-    "DP: Durjey Soni",
-    "Editor: Moon Bohra",
-    "Sound Designer: Carlos Maestre Conejero",
-    "Colorist: Manohar Naik",
-    "AC Ladkah: Jigmet Lotus",
-    "AC Mumbai: Umang Sampat",
-    "Drone: Padma Lotus",
-    "Music: Jameson Nathan Jones",
-    "Voiceover: Orion Ray",
-  ] : slug === "thaaragai-aarathana" ? [
-    "Director/Producer: Gaurav J Joshi",
-    "Writer: Kayra",
-    "DP: Vandita Jain",
-    "AC: Umang Sampat",
-    "Executive Producer: Dhruv Sharma",
-    "Editor: Pranav Patil",
-    "Colorist: Manohar Naik",
-    "Sound Design: Kapil Dev Singh",
-    "Script Consultant: Sneha",
-    "Script Alchemist: Shirley Bobby",
-    "Music Composer: Adi",
-    "1st AC: S.Arun",
-    "2nd AC: Bagath sing",
-    "Drone Pilot: Suresh",
-    "Boat Captain: Chandru",
-    "Boat 1st Assistant: Appu",
-    "Boat 2nd Assistant: Jayaseelan",
-  ] : slug === "hola-prime" ? [
-    "Director: Gaurav J Joshi",
-    "Producer: Virat Garg",
-    "DP: Umang Sampat",
-    "Executive Producer: Dhruv Sharma",
-    "Editor: Moon Bohra",
-    "Online: Niranjan Yadav",
-    "1st AD: Rytham Jain ",
-    "2nd AD: Arsh Natty",
-    "Stylist: Nidhi Sharma",
-    "Colorist: Manohar Naik",
-    "Art: Aditi Ahuja",
-    "Focus Puller: Sant Bhai",
-    "Light : Banty lights, Chandigarh",
-    "Key Grip : Krishna Shukla",
-    "Line production : Team KV",
-    "Camera Rental : Saya Films, Chandigarh",
-  ] : slug === "the-last-printer-of-bela" ? [
-    "Director/Editor/Producer: Gaurav J Joshi",
-    "DP: Umang Sampat",
-    "Colorist: Vipin Singh",
-    "Music: Artlist.io",
-  ] : slug === "amruta-mashroo-weaver" ? [
-    "Director/Producer: Gaurav J Joshi",
-    "DP: Umang Sampat",
-    "Editor/Colorist: Moon Bohra",
-    "Music: Artlist.io",
-  ] : slug === "the-art-of-origami" ? [
-    "Director/Editor/Producer: Gaurav J Joshi",
-    "Writer: Sneha",
-    "DP: Archit Singh",
-    "AC: Piyush Pal Singh",
-    "Sound Design: Kapil Dev Singh",
-    "Colorist: Harshit Saini",
-  ] : slug === "the-quilting-project" ? [
-    "Director/Producer: Gaurav J Joshi",
-    "DP: Umang Sampat",
-    "Editor/Colorist: Moon Bohra",
-    "Music: Artlist.io",
-  ] : slug === "world-environment-day" ? [
-    "Director/Editor/Producer: Gaurav J Joshi",
-    "DP: Manoj Kumar",
-    "\n",
-  ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
-  stills: slug === "zero-man-of-india"
-    ? zeroManStills
-    : slug === "talisman-awards"
-      ? talismanStills
-      : slug === "thaaragai-aarathana"
-        ? thaaragaiStills
-        : slug === "hola-prime"
-          ? holaPrimeStills
-          : slug === "the-last-printer-of-bela"
-            ? lastPrinterStills
-            : slug === "the-quilting-project"
-              ? quiltingProjectStills
-              : slug === "the-art-of-origami"
-                ? origamiStills
-                : slug === "amruta-mashroo-weaver"
-                  ? amrutaStills
-                  : slug === "world-environment-day"
-                    ? worldEnvironmentStills
-                  : slug === "aaafx"
-                    ? aaafxStills
-                    : slug === "iss-world-people-make-places"
-                      ? issWorldStills
-                      : slug === "good-earth-heritage-foundation"
-                        ? goodEarthStills
-                        : [thumbnail, thumbnail, thumbnail, thumbnail],
+    title,
+    slug,
+    year,
+    category,
+    thumbnail,
+    vimeoId,
+    heading: title,
+    description: `${category} film, ${year}.`,
+    credits: slug === "zero-man-of-india" ? [
+        "Director/Editor/Producer: Gaurav J Joshi",
+        "Writer: Sneha",
+        "DP: Vandita Jain",
+        "Line Producer: Bisma Farooq",
+        "Assistant Director: Sehar Qazi",
+        "Voiceover: Babla Kochhar",
+        "Colorist: Manohar Naik",
+        "Sound Design: Kapil Dev Singh",
+        "Music Composer: Abhilash Lakra",
+        "1st AC: Rakesh",
+        "2nd AC: Aaditya Ganguly",
+        "Production Manager: Talib Rayaz",
+        "Lightman: Santosh Kumar",
+    ] : slug === "talisman-awards" ? [
+        "Director/Producer: Gaurav J Joshi",
+        "Writer: Sneha",
+        "DP: Durjey Soni",
+        "Editor: Moon Bohra",
+        "Sound Designer: Carlos Maestre Conejero",
+        "Colorist: Manohar Naik",
+        "AC Ladkah: Jigmet Lotus",
+        "AC Mumbai: Umang Sampat",
+        "Drone: Padma Lotus",
+        "Music: Jameson Nathan Jones",
+        "Voiceover: Orion Ray",
+    ] : slug === "thaaragai-aarathana" ? [
+        "Director/Producer: Gaurav J Joshi",
+        "Writer: Kayra",
+        "DP: Vandita Jain",
+        "AC: Umang Sampat",
+        "Executive Producer: Dhruv Sharma",
+        "Editor: Pranav Patil",
+        "Colorist: Manohar Naik",
+        "Sound Design: Kapil Dev Singh",
+        "Script Consultant: Sneha",
+        "Script Alchemist: Shirley Bobby",
+        "Music Composer: Adi",
+        "1st AC: S.Arun",
+        "2nd AC: Bagath sing",
+        "Drone Pilot: Suresh",
+        "Boat Captain: Chandru",
+        "Boat 1st Assistant: Appu",
+        "Boat 2nd Assistant: Jayaseelan",
+    ] : slug === "hola-prime" ? [
+        "Director: Gaurav J Joshi",
+        "Producer: Virat Garg",
+        "DP: Umang Sampat",
+        "Executive Producer: Dhruv Sharma",
+        "Editor: Moon Bohra",
+        "Online: Niranjan Yadav",
+        "1st AD: Rytham Jain ",
+        "2nd AD: Arsh Natty",
+        "Stylist: Nidhi Sharma",
+        "Colorist: Manohar Naik",
+        "Art: Aditi Ahuja",
+        "Focus Puller: Sant Bhai",
+        "Light : Banty lights, Chandigarh",
+        "Key Grip : Krishna Shukla",
+        "Line production : Team KV",
+        "Camera Rental : Saya Films, Chandigarh",
+    ] : slug === "the-last-printer-of-bela" ? [
+        "Director/Editor/Producer: Gaurav J Joshi",
+        "DP: Umang Sampat",
+        "Colorist: Vipin Singh",
+        "Music: Artlist.io",
+    ] : slug === "amruta-mashroo-weaver" ? [
+        "Director/Producer: Gaurav J Joshi",
+        "DP: Umang Sampat",
+        "Editor/Colorist: Moon Bohra",
+        "Music: Artlist.io",
+    ] : slug === "the-art-of-origami" ? [
+        "Director/Editor/Producer: Gaurav J Joshi",
+        "Writer: Sneha",
+        "DP: Archit Singh",
+        "AC: Piyush Pal Singh",
+        "Sound Design: Kapil Dev Singh",
+        "Colorist: Harshit Saini",
+    ] : slug === "the-quilting-project" ? [
+        "Director/Producer: Gaurav J Joshi",
+        "DP: Umang Sampat",
+        "Editor/Colorist: Moon Bohra",
+        "Music: Artlist.io",
+    ] : slug === "world-environment-day" ? [
+        "Director/Editor/Producer: Gaurav J Joshi",
+        "DP: Manoj Kumar",
+        "\n",
+    ] : slug === "good-earth-heritage-foundation" ? [
+        "Director/Producer: Gaurav J Joshi",
+        "DP: Umang Sampat",
+        "Editor/Colorist: Moon Bohra",
+        "Music: Artlist.io", "\n",
+    ] : slug === "aaafx" ? [
+        "Director/Editor: Gaurav J Joshi",
+        "Producer: Virat Garg",
+        "DP: Umang Sampat",
+        "Executive Producer: Dhruv Sharma",
+        "Stylist: Nidhi Sharma",
+        "Colorist: Manohar Naik",
+        "Art: Shelly Sharma", "\n",
+    ] : slug === "iss-world-people-make-places" ? [
+        "Director/Producer: Gaurav J Joshi",
+        "DP: Umang Sampat",
+        "Executive Producer: Dhruv Sharma",
+        "Editor: Pranav Patil",
+        "Music: Artlist.io", "\n",
+    ] : ["Director: Gaurav J Joshi", `Category: ${category}`, `Year: ${year}`],
+    stills: slug === "zero-man-of-india"
+        ? zeroManStills
+        : slug === "talisman-awards"
+            ? talismanStills
+            : slug === "thaaragai-aarathana"
+                ? thaaragaiStills
+                : slug === "hola-prime"
+                    ? holaPrimeStills
+                    : slug === "the-last-printer-of-bela"
+                        ? lastPrinterStills
+                        : slug === "the-quilting-project"
+                            ? quiltingProjectStills
+                            : slug === "the-art-of-origami"
+                                ? origamiStills
+                                : slug === "amruta-mashroo-weaver"
+                                    ? amrutaStills
+                                    : slug === "world-environment-day"
+                                        ? worldEnvironmentStills
+                                        : slug === "aaafx"
+                                            ? aaafxStills
+                                            : slug === "iss-world-people-make-places"
+                                                ? issWorldStills
+                                                : slug === "good-earth-heritage-foundation"
+                                                    ? goodEarthStills
+                                                    : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
-  return projects.find((project) => project.slug === slug);
+    return projects.find((project) => project.slug === slug);
 }
