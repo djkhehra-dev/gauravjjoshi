@@ -80,6 +80,21 @@ import worldEnvironmentStill03 from "@/assets/world-environment-day-stills/world
 import worldEnvironmentStill04 from "@/assets/world-environment-day-stills/world-environment-day-04.png.asset.json";
 import worldEnvironmentStill05 from "@/assets/world-environment-day-stills/world-environment-day-05.png.asset.json";
 import worldEnvironmentStill06 from "@/assets/world-environment-day-stills/world-environment-day-06.png.asset.json";
+import issWorldStill01 from "@/assets/iss-world-stills/iss-world-01.webp.asset.json";
+import issWorldStill02 from "@/assets/iss-world-stills/iss-world-02.webp.asset.json";
+import issWorldStill03 from "@/assets/iss-world-stills/iss-world-03.webp.asset.json";
+import issWorldStill04 from "@/assets/iss-world-stills/iss-world-04.webp.asset.json";
+import issWorldStill05 from "@/assets/iss-world-stills/iss-world-05.webp.asset.json";
+import issWorldStill06 from "@/assets/iss-world-stills/iss-world-06.webp.asset.json";
+
+const issWorldStills = [
+  issWorldStill01.url,
+  issWorldStill02.url,
+  issWorldStill03.url,
+  issWorldStill04.url,
+  issWorldStill05.url,
+  issWorldStill06.url,
+];
 
 const worldEnvironmentStills = [
   worldEnvironmentStill01.url,
@@ -319,7 +334,9 @@ export const projects: Project[] = [
                   ? amrutaStills
                   : slug === "world-environment-day"
                     ? worldEnvironmentStills
-                    : [thumbnail, thumbnail, thumbnail, thumbnail],
+                    : slug === "iss-world-people-make-places"
+                      ? issWorldStills
+                      : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
