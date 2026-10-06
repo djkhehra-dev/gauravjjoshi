@@ -22,3 +22,4 @@
 - [x] Replace World Environment Day placeholders with six supplied screengrabs
 - [x] Replace ISS World placeholders with six supplied screengrabs
 - [x] Replace AAAFx placeholders with ten supplied screengrabs
+- [x] Replace Good Earth Heritage Foundation placeholders with eight supplied screengrabs

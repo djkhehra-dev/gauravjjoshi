@@ -96,6 +96,14 @@ import aaafxStill07 from "@/assets/aaafx-stills/aaafx-07.webp";
 import aaafxStill08 from "@/assets/aaafx-stills/aaafx-08.webp";
 import aaafxStill09 from "@/assets/aaafx-stills/aaafx-09.webp";
 import aaafxStill10 from "@/assets/aaafx-stills/aaafx-10.webp";
+import goodEarthStill01 from "@/assets/good-earth-stills/good-earth-01.png";
+import goodEarthStill02 from "@/assets/good-earth-stills/good-earth-02.png";
+import goodEarthStill03 from "@/assets/good-earth-stills/good-earth-03.png";
+import goodEarthStill04 from "@/assets/good-earth-stills/good-earth-04.png";
+import goodEarthStill05 from "@/assets/good-earth-stills/good-earth-05.png";
+import goodEarthStill06 from "@/assets/good-earth-stills/good-earth-06.png";
+import goodEarthStill07 from "@/assets/good-earth-stills/good-earth-07.png";
+import goodEarthStill08 from "@/assets/good-earth-stills/good-earth-08.png";
 
 const issWorldStills = [
   issWorldStill01,
@@ -104,6 +112,17 @@ const issWorldStills = [
   issWorldStill04,
   issWorldStill05,
   issWorldStill06,
+];
+
+const goodEarthStills = [
+  goodEarthStill01,
+  goodEarthStill02,
+  goodEarthStill03,
+  goodEarthStill04,
+  goodEarthStill05,
+  goodEarthStill06,
+  goodEarthStill07,
+  goodEarthStill08,
 ];
 
 const aaafxStills = [
@@ -361,7 +380,9 @@ export const projects: Project[] = [
                     ? aaafxStills
                     : slug === "iss-world-people-make-places"
                       ? issWorldStills
-                      : [thumbnail, thumbnail, thumbnail, thumbnail],
+                      : slug === "good-earth-heritage-foundation"
+                        ? goodEarthStills
+                        : [thumbnail, thumbnail, thumbnail, thumbnail],
 })) as Project[];
 
 export function getProject(slug: string) {
